@@ -112,7 +112,13 @@ We can think of this matter from another perspective: If the distance could be s
 So the Dijkstra algorithm works correctly, if there are no negative edges in the graph, but how fast is it? First the algorithm goes through the edges and nodes of the graph, taking *O(m + n)* time. The main part of the algorithm goes through the set of all the nodes in *O(n)*, and for each node *n* a maximum of *O(m)* edges, creating a time complexity of *O(m^2)*. As we know, this is not very fast. If we use an adjacency list as our data structure rather than an array, we can optimize our solution up to *O(n + m log n)*.
 
 
-There is another way to do create the algorithm, and that is with a *priority queue* (also known as *heap*). Unfortunately, that has not been implemented in C#, but let's look at that as well:
+There is another way to do create the algorithm, and that is with a *priority queue* (also known as *heap*). Unfortunately, that has not been implemented in dotnet 5.0. 
+
+<Note>
+It is in dotnet 6.0 but not in time for this course.
+</Note> 
+
+Let's look at that as well:
 
 ```console
 heap.push((0,source))
@@ -203,4 +209,4 @@ We have now gone through multiple algorithms for finding shortest paths and we c
 
 In practice, BFS and Dijkstra's algorithms are most commonly used algorithms: if the edges do not have weights, use BFS, otherwise Dijkstra's algorithm. The limitation for Dijkstra's algorithm is that the graph cannot have negative edges, but this limitation usually does not matter in practical probles, as usually the weights of the edges cannot be negative. For example, obviously the length of a road cannot be negative, nor can the timetable of a bus. If a graph must have negative arches, then we can use the Bellman-Ford.
 
-How does Floyd-Warshall compare to other algorithms, then? This depends if the graph is *dense* or *sparse*. In a spare graph there are few edges and *m ~n*, where as in a dense graph there are many edges and *m ~ n^2*. Floyd-Warshall is at its best with a dense graph, as its time complexity is not dependant on the amount of edges. For example, if we search all the shortest paths by running Dijkstra's algorithm *n* times, in a sparse graph it will take *O(n^2 log n)*, but in a dense graph it will be already *O(n^3 log n)*. In other words, with a sparse graph Dijkstra's is faster than Floyd-Warshall, but in a dense graph it is worse. On the other hand, the constants of Floyd-Warshall are very small due to its simple structure, and thus work surprisingly fast in practice.
+How does Floyd-Warshall compare to other algorithms, then? This depends if the graph is *dense* or *sparse*. In a spare graph there are few edges and *m ~ n*, where as in a dense graph there are many edges and *m ~ n^2*. Floyd-Warshall is at its best with a dense graph, as its time complexity is not dependant on the amount of edges. For example, if we search all the shortest paths by running Dijkstra's algorithm *n* times, in a sparse graph it will take *O(n^2 log n)*, but in a dense graph it will be already *O(n^3 log n)*. In other words, with a sparse graph Dijkstra's is faster than Floyd-Warshall, but in a dense graph it is worse. On the other hand, the constants of Floyd-Warshall are very small due to its simple structure, and thus work surprisingly fast in practice.

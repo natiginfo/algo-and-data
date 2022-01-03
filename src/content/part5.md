@@ -104,7 +104,7 @@ If the graph is undirected, or we can move along the edges both ways, we can rec
 
 ## Edge list
 
-Another way of saving a graph is to create an *edge list*, which contains all the edges in the graph. In C#, we caon create a list
+Another way of saving a graph is to create an *edge list*, which contains all the edges in the graph. In C#, we can create a list
 
 ```cpp
 List<Edge> edges = new List<Edge>();
@@ -260,7 +260,7 @@ We do not have to separately change the labyrinth into a graph, but we can do th
 search(y, x)
   if y < 0 or x < 0 or y >= n or x >= n
     return
-  if wall[y,x] or visited [y,x]
+  if wall[y,x] or visited[y,x]
     return
   visited[y,x] = true
   search(y+1, x)
