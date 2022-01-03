@@ -24,7 +24,7 @@ The course runs for 7 weeks.
 
 Each lecture session is 2-3 x 45 minutes or so, depending on the session and the amount of questions from the students. For best learning experience, I encourage you to ask questions, especially if you want to know more of a certain subject.
 
-Participation on the lectures is not compulsory, and you should get the same information by reading this course page. The lessons **are NOT recorded**.
+Participation on the lectures is not compulsory, and you should get the same information by reading this course page.
 
 * Before the lecture, exercises will be published, and the deadline is before the next week's lecture, unless stated otherwise. 
 
@@ -35,7 +35,7 @@ The exercises are meant to be done individually, and each student return their o
 
 * Due to public demand, the grading has been changed and clarified a bit.
 * The course tasks consist of weekly(ish) TestMyCode (TMC) exercises. They are all graded, usually 2 points per exercise (more points per larger/more difficult exercise). Each week will have roughly 10 points (some might have 8, some 12), so **60 points in total**.
-* In addition, there are quizzes in Itslearning, worth the same amount of points.
+* In addition, there are quizzes in Itslearning, worth the same amount of points, **60 in total**.
 * A student must get at least 30 points from TMC and 30 from quizzes in total to pass the course, so a minimum of 60 in total. 108 is required to get grade 5.
 
 |Points | Grade |

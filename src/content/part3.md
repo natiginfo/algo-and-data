@@ -42,7 +42,9 @@ What happens, when we call for example **Power(2.0, 4)**? On mathemathical level
 16  
 
 
-Notice, how the recursion "expands" until we reach *n = 0* and then "rewinds" as we calculate the values one by one.
+<Note>
+Notice, how the recursion "expands" until we reach n = 0 and then "rewinds" as we calculate the values one by one.
+</Note>
 
 The method has a *run-time stack*, where all this information is stored, until we reach the very end. Basically it means having all the information in the computer memory. As we get into larger examples, the size of the stack might become quite large, and we might run out of memory.
 
@@ -430,4 +432,4 @@ The picture above shows the functionality, when we are looking for the value of 
 
 With binary search we could find out for example, if the array has two elements *a* and *b* so, that *a + b = x*, where x is the given input. The idea is to sort the array first and then go through all the elements of the array. With each element we examine, could it be *a*. In this case, there would have to be another element *b* in such a way, that *a + b = x*, or the array should contain an element *x - a*. We can find this with binary search in *O(log n)*. As a result, we have an algorithm, which takes up time *O(n log n)*, because both sorting and going through the array with binary search take up *O(n log n)*.
 
-[**Exercises here**](https://centria.github.io/algo-and-data/exercises/#part-3---recursion)
+

@@ -129,7 +129,9 @@ while not heap.empty()
       heap.push((new,edge.end))
 ```
 
-Notice, that in the heap there can be *multiple* distances for a node in the heap, as we add a new node to the heap each time the distance improves. We will visit each node only once, as every time we get a new node from the heap for visiting, we first make sure that we have not visited said node earlier.
+<Note>
+In the heap there can be multiple*distances for a node in the heap, as we add a new node to the heap each time the distance improves. We will visit each node only once, as every time we get a new node from the heap for visiting, we first make sure that we have not visited said node earlier.
+</Note>
 
 This implementation first goes through all the nodes and edges in time *O(n+m)*. The heap requires operations, and at worst case for each edge we have to add another element to the heap, which takes *O(m log m)*. On the other hand, we will eventually remove all the nodes from the heap, taking also *O(m log m)*. Thus the complete time complexity for this implementation is *O(n + m log m)*. We can clean this up a bit, since we can assume there are no two edges with the same start and end nodes are the same, resulting in *O(n + m log n)*.
 
@@ -202,5 +204,3 @@ We have now gone through multiple algorithms for finding shortest paths and we c
 In practice, BFS and Dijkstra's algorithms are most commonly used algorithms: if the edges do not have weights, use BFS, otherwise Dijkstra's algorithm. The limitation for Dijkstra's algorithm is that the graph cannot have negative edges, but this limitation usually does not matter in practical probles, as usually the weights of the edges cannot be negative. For example, obviously the length of a road cannot be negative, nor can the timetable of a bus. If a graph must have negative arches, then we can use the Bellman-Ford.
 
 How does Floyd-Warshall compare to other algorithms, then? This depends if the graph is *dense* or *sparse*. In a spare graph there are few edges and *m ~n*, where as in a dense graph there are many edges and *m ~ n^2*. Floyd-Warshall is at its best with a dense graph, as its time complexity is not dependant on the amount of edges. For example, if we search all the shortest paths by running Dijkstra's algorithm *n* times, in a sparse graph it will take *O(n^2 log n)*, but in a dense graph it will be already *O(n^3 log n)*. In other words, with a sparse graph Dijkstra's is faster than Floyd-Warshall, but in a dense graph it is worse. On the other hand, the constants of Floyd-Warshall are very small due to its simple structure, and thus work surprisingly fast in practice.
-
-[**Exercises here**](https://centria.github.io/algo-and-data/exercises/#part-6---shortest-paths)

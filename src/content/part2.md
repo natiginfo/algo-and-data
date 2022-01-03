@@ -74,7 +74,7 @@ for i = 1 to n
 
 In general, if the code has *k* indented loops, the time complexity is *O(n^k)*.
 
-Notice, that the constants and lower time complexities do not affect the time complexity. For example, in the following loops there are *2n* and *n - 1* operations, but the time complexity for both are *O(n)*.
+<Note>The constants and lower time complexities do not affect the time complexity. For example, in the following loops there are 2n and n - 1 operations, but the time complexity for both are O(n).</Note>
 
 ```console
 for i = 1 to 2*n 
@@ -326,7 +326,9 @@ for i = 0 to n-1
 missing = sum
 ```
 
-Notice, that instead of variables and arrays, *recursion* can also take up space, since all the information of recursive subprogram calls are in a recursion stack in memory. For example, the following method has a space complexity of *O(n)*, because there is at most *n* layers of recursive calls in the memory.
+<Note>
+Instead of variables and arrays, *recursion* can also take up space, since all the information of recursive subprogram calls are in a recursion stack in memory. For example, the following method has a space complexity of O(n), because there is at most *n* layers of recursive calls in the memory.
+</Note>
 
 ```console
 int f(n)
@@ -336,5 +338,3 @@ int f(n)
 ```
 
 In practice, space complexity does not play a major role in algorithms, since if the algorithm is *efficient*, it does not have the time to use up much memory. Especially, the space complexity can not be greater than time complexity. Thus we do not have to worry about space complexity as mcuh, but we can focus on creating algorithms which are fast and efficient, and compare the time complexity of different solutions.
-
-[**Exercises here**](https://centria.github.io/algo-and-data/exercises/#part-2---time-complexity)
