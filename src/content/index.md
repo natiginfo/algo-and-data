@@ -4,6 +4,22 @@ nav_order: 1
 hidden: false
 ---
 
+Welcome to the Algorithms and Data Structures course!
+
+<Note>This course has a living material, which means it will be published on weekly basis. This includes both the materials and the exercises.</Note>
+
+## If you just want to learn
+
+To attend the course, you do not have to be a student in Centria University of Applied science. All the material and exercises are available online. If you want to get ECTS credits for the course, you have to register to Centria Open University.
+
+
+## Registering to Open University course
+
+<Note>The open version will be published in May!</Note>
+
+You can register to the course from [TBD](https://tki.centria.fi/koulutus/). This version of the course is open until 15.12.2022 and has only one final deadline at 15.12.2022.
+
+
 # Learning goals
 
 The list below does not include everything, but exists to give a guideline for students, what to expect each week. This list may extend as the course goes on.
@@ -17,24 +33,9 @@ The list below does not include everything, but exists to give a guideline for s
 | 5| You understand the basics of *graph* data structures and searching them with *DFS* and *BFS*. |
 | 6| You know of Bellman-Ford, Djikstra's and Floyd-Warshall algorithms and understand their basic functionality. |
 
-
-## How does this course work?
-
-The course runs for 7 weeks.
-
-Each lecture session is 2-3 x 45 minutes or so, depending on the session and the amount of questions from the students. For best learning experience, I encourage you to ask questions, especially if you want to know more of a certain subject.
-
-Participation on the lectures is not compulsory, and you should get the same information by reading this course page.
-
-* Before the lecture, exercises will be published, and the deadline is before the next week's lecture, unless stated otherwise. 
-
-The exercises are meant to be done individually, and each student return their own answers. You can, of course, help each other, and I do encourage you to do so. Each student, anyways, returns their own answers. The answers will be handled after the deadlines.
-
-
 ## Grading
 
-* Due to public demand, the grading has been changed and clarified a bit.
-* The course tasks consist of weekly(ish) TestMyCode (TMC) exercises. They are all graded, usually 2 points per exercise (more points per larger/more difficult exercise). Each week will have roughly 10 points (some might have 8, some 12), so **60 points in total**.
+* The course tasks consist of weekly TestMyCode (TMC) exercises. They are all scored, usually 2 points per exercise (more points per larger/more difficult exercise). Each week will have roughly 10 points (some might have 8, some 12), so **60 points in total**.
 * In addition, there are quizzes in Itslearning, worth the same amount of points, **60 in total**.
 * A student must get at least 30 points from TMC and 30 from quizzes in total to pass the course, so a minimum of 60 in total. 108 is required to get grade 5.
 
@@ -48,3 +49,8 @@ The exercises are meant to be done individually, and each student return their o
 | 108-120 |   5   |
 
 At the end of the courses, there is also an exam with **pass / fail** grading. This does not affect the grade but is to ensure that you have done the exercises yourself. More information about the exam will come closer to the exam.
+
+
+## Errors in the material?
+
+Did you find an error? A typo perhaps? Please make a pull request at [GitHub](https://github.com/centria/algo-and-data/tree/master/src/content) and help us make the material better!
