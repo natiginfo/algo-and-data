@@ -130,7 +130,7 @@ while not heap.empty()
 ```
 
 <Note>
-In the heap there can be multiple*distances for a node in the heap, as we add a new node to the heap each time the distance improves. We will visit each node only once, as every time we get a new node from the heap for visiting, we first make sure that we have not visited said node earlier.
+In the heap there can be multiple distances for a node in the heap, as we add a new node to the heap each time the distance improves. We will visit each node only once, as every time we get a new node from the heap for visiting, we first make sure that we have not visited said node earlier.
 </Note>
 
 This implementation first goes through all the nodes and edges in time *O(n+m)*. The heap requires operations, and at worst case for each edge we have to add another element to the heap, which takes *O(m log m)*. On the other hand, we will eventually remove all the nodes from the heap, taking also *O(m log m)*. Thus the complete time complexity for this implementation is *O(n + m log m)*. We can clean this up a bit, since we can assume there are no two edges with the same start and end nodes are the same, resulting in *O(n + m log n)*.
