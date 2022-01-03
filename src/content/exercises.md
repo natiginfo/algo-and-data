@@ -1,19 +1,27 @@
 ---
-title: 'Exercises'
+title: 'Exercises and Exam'
 nav_order: 99
 hidden: false
 ---
 
-## Where to begin
+The course is divided into six parts, all of which contain exercises. To pass the course, the student must pass at least 50 % of the course exercises and the exam at the end of the course.
 
-Before you do this course, it is advised to do the [**course for command line and version control first**](https://centria.github.io/console/). This gives you tools to learn how to create your own Git repository and how to use it. This is required for returning the exercises for this course.
+## Deadlines
 
-## Doing the exercises
+The course has weekly deadlines TBA, by which exercises have to be done. The deadline is automatic and hard.
 
-[**The exercises for this course are behind this link**](https://github.com/centria/coding-exercises). Do read each material section before trying to do the exercises.
+## Advancing on the course
 
-## Requirements
+At the beginning of the course, only the exercises for Part 1 are available for a student. To advance to next part, the student must get at least 50 % of a part's points.
 
-To do the exercises, you need [**Dotnet Core**](https://dotnet.microsoft.com/download) and a decent editor, such as [**Visual Studio Code**](https://code.visualstudio.com/), as well as a [**GitHub account**](https://github.com/).
+## Submitting the exercises
 
-You can use any editor, but the instructions are written with VSC in mind.
+Exercise submission instructions <Link style={{color: "#ef5b5b"}} to='/tmc'>can be found from the TMC instructions.</Link> 
+
+## The exam
+
+The exam will be held in Centria's Itslearning platform.
+
+The deadline for the exm TBA.
+
+<Note>Registering might take a couple of days, so make sure to register earlier than on the last day! </Note>

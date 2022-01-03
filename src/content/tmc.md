@@ -35,7 +35,7 @@ Once you have everything installed, you need to download the exercises to your c
 
 When you have the account, follow the instructions for:
 - Selecting your organization: *Centria University of Applied Sciences*
-- Selecting your course: *Basics of Programming in C# in Open University*
+- Selecting your course: *Algorithms and Data Structures with C#*
 
 ## Doing the exercises
 
