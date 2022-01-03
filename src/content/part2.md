@@ -110,7 +110,7 @@ for i = 1 to n
     ...
 ```
 
-### Rekursive algorithms
+### Recursive algorithms
 
 For a recursive algorithm we calculate how many recursive calls are made, and how many operations a single call takes. Let's see the next method, which is called with a parameter *n*.
 
