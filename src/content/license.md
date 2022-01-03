@@ -1,27 +1,13 @@
 ---
 title: 'License'
-nav_order: 105
+nav_order: 999
 hidden: true
 ---
 
-MIT License
+The course material relies heavily on the **Tietorakenteet ja algoritmit** book (only available in Finnish), by Antti Laaksonen. The book is available here: [**https://www.cs.helsinki.fi/u/ahslaaks/tirakirja/**](https://www.cs.helsinki.fi/u/ahslaaks/tirakirja/). This course uses the spring 2020 edition. The book is used in University of Helsinki's course: [**https://tira-s19.mooc.fi/**](https://tira-s19.mooc.fi/), which is also an inspiration to this course.
 
-Copyright (c) 2021 Centria University of Applied Sciences
+This material has been adapted from the said material by [**Heikki Ahonen**](https://github.com/heikkihei); the adaptation is licensed using [**CC BY-NC-SA 4.0**](https://creativecommons.org/licenses/by-nc-sa/4.0/deed). More information about the original material and its license can be found [**here**](https://tira-s19.mooc.fi/credits).
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## Errors in the material?
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Did you find an error? A typo perhaps? Please make a pull request at [GitHub](https://github.com/centria/algo-and-data/tree/master/src/content) and help us make the material better!
