@@ -66,13 +66,13 @@ source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw
 
 If we want to create an adjacency list in C# we can create a List
 
-```cs
+```cpp
 List<int>[] graph = new List<int>[n + 1];
 ```
 
 And we can initialize our adjacency list with
 
-```cs
+```cpp
 for (int i = 1; i <= n; i++)
 {
   graph[i] = new List<int>();
@@ -81,7 +81,7 @@ for (int i = 1; i <= n; i++)
 
 Add edges to the lists with
 
-```cs
+```cpp
 graph[1].Add(2);
 graph[1].Add(3);
 graph[1].Add(4);
@@ -93,7 +93,7 @@ graph[4].Add(5);
 
 Adjacency list is a quite often a useful way to create a graph, as we might for example want to find out, which nodes we can get to from a certain node, traversing the edges. For example, the following code goes through all the nodes, we can traverse to from node *x*:
 
-```cs
+```cpp
 foreach (int i in graph[x])
 {
   // Do something with the node i
@@ -106,13 +106,13 @@ If the graph is undirected, or we can move along the edges both ways, we can rec
 
 Another way of saving a graph is to create an *edge list*, which contains all the edges in the graph. In C#, we caon create a list
 
-```cs
+```cpp
 List<Edge> edges = new List<Edge>();
 ```
 
 which contains the following kind of edges:
 
-```cs
+```cpp
 public class Edge
 {
   public int beginning, end;
@@ -127,7 +127,7 @@ public class Edge
 
 The following code creates an edge list which corresponds with our example graph:
 
-```cs
+```cpp
 edges.Add(new Edge(1,2));
 edges.Add(new Edge(1,3));
 edges.Add(new Edge(1,4));
@@ -149,13 +149,13 @@ source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw
 
 In C#, we can do the adjacency matrix like follows:
 
-```cs
+```cpp
 int[,] graph = new int[n + 1, n + 1];
 ```
 
 After which we can form the matrix like this:
 
-```cs
+```cpp
 graph[1, 2] = 1;
 graph[1, 3] = 1;
 graph[1, 4] = 1;

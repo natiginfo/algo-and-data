@@ -75,7 +75,7 @@ The doubly linked list is a more reasonable way of doing a linked list, and from
 
 In every coding language there are ways of creating a linked list, and often they are built-in. Let's anyways have a look, how we could implement a linked list.
 
-```cs
+```cpp
 public class Node
 {
   public int value;
@@ -93,13 +93,13 @@ public class Node
 
 The property *value* stores the value of the node, *next* refers to the next node, and the *previous* refers to the previous node. If there is no previous or next node, the reference is set to *null*. For example the next code creates a Node, with a value of *5* and it references nowhere:
 
-```cs
+```cpp
 Node n = new Node(5, null, null);
 ```
 
 The following code illustrates how we can use this to create a linked list:
 
-```cs
+```cpp
 Node n1 = new Node(3, null, null);
 Node n2 = new Node(7, null, n1);
 Node n3 = new Node(2, null, n2);
@@ -114,7 +114,7 @@ We end up doing it a bit clumsily. If we would initialize the Nodes as for examp
 
 After this we could go through our linked list from the beginning to the end:
 
-```cs
+```cpp
 Node n = n1;
 while (n != null)
 {

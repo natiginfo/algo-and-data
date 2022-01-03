@@ -17,7 +17,7 @@ x^n = x * x^(n-1), if n > 0
 
 In this case, the n = 0 is the base case, which directly includes the solution. We can write this into a program:
 
-```cs
+```cpp
 public static double Power(double x, int n)
 {
   if (n == 0)
@@ -53,7 +53,7 @@ The method has a *run-time stack*, where all this information is stored, until w
 The simplest situation is when a method calls itself only once. For example:
 
 
-```cs
+```cpp
 static void Test(int n)
 {
   Console.Write(n + " ");
@@ -79,7 +79,7 @@ Here the method **Test** first prints the value for parameter *n*. If n is 1, th
 
 The situation becomes more interesting, when a method calls itself multiple times. The following code is otherwise equal to the previous one, but the now at the end we have *two* recursive calls:
 
-```cs
+```cpp
 static void Main(string[] args)
 {
   Test(4);
@@ -104,7 +104,7 @@ Now the example print is as follows:
 
 The next method **Sum** calculates the sum *1 + 2 + 3 ... + n* with recursion.
 
-```cs
+```cpp
 static void Main(string[] args)
 {
   Console.WriteLine(Sum(10)); // 55
@@ -155,7 +155,7 @@ test
 
 The following method **Examine** will go through the contents of a given folder. The *File object* given as a parameter can be either a file or a folder. If it is a folder, the method will recursively go through its content. If it is a file, the method will print its name.
 
-```cs
+```cpp
 static void Main(string[] args)
 {
   Examine("test");
@@ -203,7 +203,7 @@ test/mike/12.txt
 
 As you might have guessed, not everything is reasonable to create with recursion. In the beginning, we had a solution for calculating mathemathical powers with recursion. A more reasonable way could be for example:
 
-```cs
+```cpp
 public static double Power(double x, int n)
 {
   double result = 1;

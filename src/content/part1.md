@@ -56,7 +56,7 @@ There are several ways to represent an algorithm. One way is to describe the fun
 
 For example, the next C# code implements the algorithm for calculating the sum of the numbers:
 
-```cs
+```cpp
 List<int> numbers = new List<int> { /* add n numbers */};
 
 int sum = 0;
@@ -92,7 +92,7 @@ Let's take a quick recap in the basics of programming. Even the most complex alg
 
 ### Variable
 
-```cs
+```cpp
 int a = 5;
 int b = 7;
 int c = a + b;
@@ -110,7 +110,7 @@ c = a + b
 
 A conditional statement makes the program's function dependant from for example variable values. The next C# code tells if the variable is even or odd:
 
-```cs
+```cpp
 if (x % 2 == 0)
 {
   Console.WriteLine("even");
@@ -134,7 +134,7 @@ else
 
 Loop repeats the code inside it. Common loops are *for-loop* for certain set of values, and *while-loop*, which loops as long as the condition is true. For example, the following C# code prints numbers from 1 to 100:
 
-```cs
+```cpp
 for (int i = 1; i <= 100; i++)
 {
   Console.WriteLine(i);
@@ -150,7 +150,7 @@ for i = 1 to 100
 
 The following code prints positive numbers, starting from *x* and and halves them with each step:
 
-```cs
+```cpp
 while (x >= 1)
 {
   Console.WriteLine(x);
@@ -172,7 +172,7 @@ Array is (one of) the most basic data structures in computer science. An array h
 
 As an example, here's an array that can hold 5 integers, and we add two integers to it:
 
-```cs
+```cpp
 int[] numbers = new int[5];
 numbers[0] = 4;
 numbers[3] = 2;
@@ -197,7 +197,7 @@ Subprogram is a named part of a program, which can be called with parameters. A 
 
 For example:
 
-```cs
+```cpp
 void Print(int n)
 {
   for (int i = 1; i <= n; i++)
@@ -215,7 +215,7 @@ void Print(n)
 
 Or, to calculate a sum for numbers from 1 to *n*:
 
-```cs
+```cpp
 int Sum (int n)
 {
   int s = 0;
