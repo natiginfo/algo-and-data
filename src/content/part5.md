@@ -273,3 +273,8 @@ We begin our search from a coordinate *y,x*. Our first check is to determine we 
 
 
 
+# Exercises
+
+<Note>
+Exercises will be published before the lecture!
+</Note>

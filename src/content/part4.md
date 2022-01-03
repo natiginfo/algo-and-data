@@ -277,3 +277,9 @@ In the example above, you can see two binary trees for set **{1,2,3,4,5}**. The 
 For a binary tree to work efficiently, we don't want the height to become too large. More specificly, our target is to have the nodes split evenly between both sides of the tree and the height would be *O(log n)*. This situation is called a *balanced* tree. If we manage to do this, all the operations can be done in *O(log n)*. 
 
 There are multiple ways to balance a binary search tree. They are, how ever, well beyond the scope of this small course. It is crucial to know, however, that the selection of the root is, even though free, not recommended to be done at random, but with careful thought.
+
+# Exercises
+
+<Note>
+Exercises will be published before the lecture!
+</Note>

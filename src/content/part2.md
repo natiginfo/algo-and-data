@@ -338,3 +338,9 @@ int f(n)
 ```
 
 In practice, space complexity does not play a major role in algorithms, since if the algorithm is *efficient*, it does not have the time to use up much memory. Especially, the space complexity can not be greater than time complexity. Thus we do not have to worry about space complexity as mcuh, but we can focus on creating algorithms which are fast and efficient, and compare the time complexity of different solutions.
+
+# Exercises
+
+<Note>
+Exercises will be published before the lecture!
+</Note>
