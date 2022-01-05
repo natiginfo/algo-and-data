@@ -36,17 +36,16 @@ The list below does not include everything, but exists to give a guideline for s
 ## Grading
 
 * The course tasks consist of weekly TestMyCode (TMC) exercises. They are all scored, usually 2 points per exercise (more points per larger/more difficult exercise). Each week will have roughly 10 points (some might have 8, some 12), so **60 points in total**.
-* In addition, there are quizzes in Itslearning, worth the same amount of points, **60 in total**.
-* A student must get at least 30 points from TMC and 30 from quizzes in total to pass the course, so a minimum of 60 in total. 108 is required to get grade 5.
+* A student must get at least 50 % of points to pass the course, and 90 % for grade 5.
 
 |Points | Grade |
 |:-----:|:-----:|
-| <= 59 |   0   |
-| 60-71 |   1   |
-| 72-84 |   2   |
-| 84-95 |   3   |
-| 96-107 |   4   |
-| 108-120 |   5   |
+| <= 29 |   0   |
+| 30-35 |   1   |
+| 36-41 |   2   |
+| 42-47 |   3   |
+| 48-53 |   4   |
+| 54-60 |   5   |
 
 At the end of the courses, there is also an exam with **pass / fail** grading. This does not affect the grade but is to ensure that you have done the exercises yourself. More information about the exam will come closer to the exam.
 
