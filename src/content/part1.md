@@ -398,6 +398,7 @@ LuckyNumbers luck = new LuckyNumbers();
 Console.WriteLine(luck.Calculate(1,10)); // 2
 Console.WriteLine(luck.Calculate(123,321)); // 0
 Console.WriteLine(luck.Calculate(1,1000000)); // 126
+Console.WriteLine(luck.Calculate(120, 1000000000)); // 1016  
 ```
 
 <Note>One way to do this, is to calculate from 1 to a and 1 to b separately, and substract them.</Note>
