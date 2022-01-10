@@ -310,3 +310,95 @@ Usually when we want to find a solution to a mathematical problem, we want to fi
 <Note>
 Exercises will be published before the lecture!
 </Note>
+
+<Exercise title={'001 Numbers'}>
+
+Create a class **Numbers**, which calculates the sum of the numbers in an integer. For example, with 4075, the sum is 4 + 0 + 7 + 5 = 16. Use the following method:
+  
+* int Sum(int x), returns the sum of the numbers in x.
+  
+For example:
+
+```cpp
+Numbers num = new Numbers();
+Console.WriteLine(num.Sum(4075)); // 16
+Console.WriteLine(num.Sum(3)); // 3
+Console.WriteLine(num.Sum(999999999)); // 81
+```
+
+</Exercise>
+
+
+<Exercise title={'002 Substrings'}>
+
+A substring is a string, that is part of another string. For example, in string *aybabtu* some substrings are *bab* and *abtu*.
+
+* Create a class **Substrings**, which has the following method:
+  * int Calculate(string a, string b), which calculates how many times a substring b can be found from the string a. 
+
+For example:
+
+```cpp
+int Calculate(string a, string b)
+```
+
+All the characters are from a to z (non-capital)
+The code should work as follows:
+
+```cpp
+Substrings subs = new Substrings();
+Console.WriteLine(subs.Calculate("aybabtu", "bab")); // 1
+Console.WriteLine(subs.Calculate("aaaaa", "aa")); // 4
+Console.WriteLine(subs.Calculate("monkey", "banana")); // 0
+```
+
+</Exercise>
+
+
+<Exercise title={'003 Tables'}>
+
+As a parameter, give the program an array with integers. With each step, form a new array, where each element is the sum of two elements that were next to each other in the previous array. Eventually, you will have an array with only one element. For example, with \[1,2,3,2\] should first turn into \[3,5,5\], this into \[8,10\] and finally into \[18\].
+
+* Create a class called **Tables**, which has the following method:
+  * **int Calculate(int[] t)**, which returns the value of the last element (an integer, not the whole array).
+
+
+The class should work as follows.
+
+```cpp
+Tables t = new Tables();
+Console.WriteLine(t.Calculate(new int[] {1,2,3,2})); // 18
+Console.WriteLine(t.Calculate(new int[] {5})); // 5
+Console.WriteLine(t.Calculate(new int[] {4,2,9,1,9,2,5})); // 323
+```
+
+<Note>
+You might want to try recursion. You can do this without it as well, but this is a good chance to try it out!
+</Note>
+
+</Exercise>
+
+
+<Exercise title={'004 Lucky numbers'}>
+
+<Note>This exercise is worth double points</Note>
+
+An integer is a lucky number, if every number in it is either 3 or 7. For example, 3, 7, 33, 37, 73, 77, and 733737 are lucky numbers. Your assigment is to calculate lucky numbers between a...b.
+
+* Create a class LuckyNumbers, with the following method:
+  * int Calculate(int a, int b), which returns the amount of lucky numbers between two integers.
+
+The following code represents the usage of the class:
+
+```cpp
+LuckyNumbers luck = new LuckyNumbers();
+Console.WriteLine(luck.Calculate(1,10)); // 2
+Console.WriteLine(luck.Calculate(123,321)); // 0
+Console.WriteLine(luck.Calculate(1,1000000)); // 126
+```
+
+<Note>One way to do this, is to calculate from 1 to a and 1 to b separately, and substract them.</Note>
+
+<Note>Do not go through all the numbers, it is very inefficient. Try to find a mathematical pattern!</Note>
+
+</Exercise>
