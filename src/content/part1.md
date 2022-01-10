@@ -333,8 +333,9 @@ Console.WriteLine(num.Sum(999999999)); // 81
 
 A substring is a string, that is part of another string. For example, in string *aybabtu* some substrings are *bab* and *abtu*.
 
-* Create a class **Substrings**, which has the following method:
-  * int Calculate(string a, string b), which calculates how many times a substring b can be found from the string a. 
+Create a class **Substrings**, which has the following method:
+
+* int Calculate(string a, string b), which calculates how many times a substring b can be found from the string a. 
 
 For example:
 
@@ -359,8 +360,9 @@ Console.WriteLine(subs.Calculate("monkey", "banana")); // 0
 
 As a parameter, give the program an array with integers. With each step, form a new array, where each element is the sum of two elements that were next to each other in the previous array. Eventually, you will have an array with only one element. For example, with \[1,2,3,2\] should first turn into \[3,5,5\], this into \[8,10\] and finally into \[18\].
 
-* Create a class called **Tables**, which has the following method:
-  * **int Calculate(int[] t)**, which returns the value of the last element (an integer, not the whole array).
+Create a class called **Tables**, which has the following method:
+
+* **int Calculate(int[] t)**, which returns the value of the last element (an integer, not the whole array).
 
 
 The class should work as follows.
@@ -385,8 +387,9 @@ You might want to try recursion. You can do this without it as well, but this is
 
 An integer is a lucky number, if every number in it is either 3 or 7. For example, 3, 7, 33, 37, 73, 77, and 733737 are lucky numbers. Your assigment is to calculate lucky numbers between a...b.
 
-* Create a class LuckyNumbers, with the following method:
-  * int Calculate(int a, int b), which returns the amount of lucky numbers between two integers.
+Create a class LuckyNumbers, with the following method:
+  
+* int Calculate(int a, int b), which returns the amount of lucky numbers between two integers.
 
 The following code represents the usage of the class:
 
