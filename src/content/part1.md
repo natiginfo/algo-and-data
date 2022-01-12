@@ -22,14 +22,14 @@ Most of the computer processors are nowadays multicore, multithreaded, and appli
 *Algorithm*, in its simplest form, is an instruction. With said instruction, we can solve a computational problem. Algorithm is given an **input**, which describes the problem, and it produces an **output**, which is the answer to the given problem. All of us have encountered algorithms in our lives, but probably don't think of them as such. The most common algorithm in daily life is probably a **cooking recipe**. Let's take a look.
 
 
-* 1/2 l    milk
-* 50  g    yeast
-* 1        egg
-* 1,5 tsp  salt
-* 0,2 l   sugar
-* 1   tbsp cardemom
-* 900 g of wheat flour
-* 200 g butter
+* 1/2 l     milk
+* 50  g     yeast
+* 1         egg
+* 1,5 tsp   salt
+* 0,2 l     sugar
+* 1 tbsp    cardemom
+* 900 g     wheat flour
+* 200 g     butter
 
 * egg for washing
 * pearl sugar for decoration
