@@ -224,7 +224,7 @@ int fibonacci(input)
   return fibonacci(input - 2) + fibonacci(input - 1);
 ```
 
-If the time complexity is *O(n!)*, the algorithm probably goes through the permutations of the elements from the input. The *!* in mathematical notation means *factorial*. For example, the factorial *5!* could be written as *5 * 4 * 3 * 2 * 1*. Our code example prints the numbers from input *n* in factorial manner.
+If the time complexity is *O(n!)*, the algorithm probably goes through the permutations of the elements from the input. The *!* in mathematical notation means *factorial*. For example, the factorial *5!* could be written as *5 \* 4 \* 3 \* 2 \* 1*. Our code example prints the numbers from input *n* in factorial manner.
 
 ```console
 void factorial(n)
