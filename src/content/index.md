@@ -6,7 +6,11 @@ hidden: false
 
 Welcome to the Algorithms and Data Structures course!
 
-<Note>This course has a living material, which means it will be published on weekly basis. This includes both the materials and the exercises.</Note>
+<Note>
+This course has a living material, which means it will be published on weekly basis. This includes both the materials and the exercises.
+
+Some of the later parts might contain information about previous iterations of the course, such as references to exercises, which may or may not be in this iteration.
+</Note>
 
 ## If you just want to learn
 
