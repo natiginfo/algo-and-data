@@ -276,6 +276,10 @@ for i = 0 to n-1
 print(counter)
 ```
 
+<Note>
+As we have a string instead of an integer, we are checking for characters rather than numbers. So for example chars[0] gives the first character of a string called chars
+</Note>
+
 The time complexity for this algorithm is O(n^2), since it has two indented loops, which go through the input.
 
 ### O(n) algorithm
@@ -348,3 +352,64 @@ Even though in the material we use pseudocode to show functionality of certain a
 <Note>
 Exercises will be published before the lecture!
 </Note>
+
+<Exercise title={'001 Basic Efficiency'}>
+
+You are given two classes, **Efficient** and **Inefficient**, both having a method **Counter**. In those methods, implement in C# the functionality of the following codes from the material.
+
+<Note>
+The code in the Program.cs is just for trying out the methods and show the difference in efficiency.
+</Note>
+
+* For the Inefficient, implement this in C#:
+
+```console
+counter = 0
+for i = 0 to n-1
+  for j = i + 1 to n-1
+    if chars[i] == 0 and chars[j] == 1
+      counter += 1
+print(counter)
+```
+
+* For the Efficient, implement this in C#:
+
+```console
+counter = 0
+zeros = 0
+for i = 0 to n-1
+  if chars[i] == 0
+    zeros += 1
+  else
+    counter += zeros
+print(counter)
+```
+
+<Note>
+We are handling characters instead of numbers in our comparisons, as the input is a string!
+</Note>
+
+</Exercise>
+
+
+<Exercise title={'002 Longest Repetition'}>
+
+You are given a class, **LongestRepetition** and in it a method **Calculate**. The method takes an array as its parameter. Your task is to calculate, how long is the longest section of recurring numbers in the array.
+
+<Note>
+You should be able to do this in O(n), as O(n^2) will probably time out.
+</Note>
+
+The following code represents the behavior:
+
+```cpp
+LongestRepetition p = new LongestRepetition();
+Console.WriteLine(p.Calculate(new int[] {1,2,1,1,2})); // 2
+Console.WriteLine(p.Calculate(new int[] {1,2,3,4,5})); // 1
+Console.WriteLine(p.Calculate(new int[] { 12 })); // 1
+Console.WriteLine(p.Calculate(new int[] {1,1,1,1,1})); // 5
+```
+
+
+
+</Exercise>
