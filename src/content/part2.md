@@ -270,7 +270,7 @@ We can solve the problem with brute force by going through each possible way to 
 ```console
 counter = 0
 for i = 0 to n-1
-  for j = 0 to n-1
+  for j = i + 1 to n-1
     if chars[i] == 0 and chars[j] == 1
       counter += 1
 print(counter)
