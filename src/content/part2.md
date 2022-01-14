@@ -397,18 +397,102 @@ We are handling characters instead of numbers in our comparisons, as the input i
 You are given a class, **LongestRepetition** and in it a method **Calculate**. The method takes an array as its parameter. Your task is to calculate, how long is the longest section of recurring numbers in the array.
 
 <Note>
-You should be able to do this in O(n), as O(n^2) will probably time out.
+You should be able to do this in O(n), as O(n^2) will probably time out and fail the test... That is, the code needs to be efficient!
 </Note>
 
 The following code represents the behavior:
 
 ```cpp
 LongestRepetition p = new LongestRepetition();
-Console.WriteLine(p.Calculate(new int[] {1,2,1,1,2})); // 2
-Console.WriteLine(p.Calculate(new int[] {1,2,3,4,5})); // 1
+Console.WriteLine(p.Calculate(new int[] { 1,2,1,1,2 })); // 2
+Console.WriteLine(p.Calculate(new int[] { 1,2,3,4,5 })); // 1
 Console.WriteLine(p.Calculate(new int[] { 12 })); // 1
-Console.WriteLine(p.Calculate(new int[] {1,1,1,1,1})); // 5
+Console.WriteLine(p.Calculate(new int[] { 1,1,1,1,1 })); // 5
 ```
+
+</Exercise>
+
+<Exercise title={'003 Changes'}>
+
+
+You are given a class, **Changes** and in it a method **Calculate**. The method is given an array with n integers as its parameter. You want to change the array, so that no number is repeated after one another. On each step, you can change any number from the array to be something else. What is the smallest amount of steps?
+
+For example, in array \[1,1,2,2,2\] the smallest amount of moves is 2. One solution would be to change the array to be \[1,3,2,1,2\]. Another coud be to change it to \[1,2,1,2,1\]. The solution is up to you.
+
+Use the method **int Calculate(int[] t)**, which returns the smallest amount of changes.
+
+<Note>
+You should be able to do this in O(n), as O(n^2) will probably time out and fail the test... That is, the code needs to be efficient!
+</Note>
+
+The following code represents the behavior:
+
+```cpp
+Changes m = new Changes();
+Console.WriteLine(m.Calculate(new int[] { 1, 1, 2, 2, 2 })); // 2
+Console.WriteLine(m.Calculate(new int[] { 1, 2, 3, 4, 5 })); // 0
+Console.WriteLine(m.Calculate(new int[] { 1, 1, 1, 1, 1, 1, 1, 1, 1 })); // 4
+Console.WriteLine(m.Calculate(new int[] { 0, 0, 0, 0, 0 })); // 2
+Console.WriteLine(m.Calculate(new int[] { 1, 1, 1, 1 })); // 2
+Console.WriteLine(m.Calculate(new int[] { 0, 0, 0, 0 })); // 2
+Console.WriteLine(m.Calculate(new int[] { 0, 0, 0 })); // 1
+```
+
+</Exercise>
+
+<Exercise title={'004 Revolutions'}>
+
+You are given an array with all the integers *1...n* exactly once. You want to collect the integers from smallest to largest, taking one or more revolutions in the array. With each revolution, you will traverse the array from left to right and pick as many as possible integers in order. How many revolutions do you do in total?
+
+For example, in array \[4,1,3,2,5\] the amount of revolutions is three, because on the first revolution you pick up 1 and 2, next revolution 3 and on the third one you pick up 4 and 5.
+
+You are given a class **Revolutions** with the method **int Calculate(int[] t)**, which returns the amount of revolutions.
+
+<Note>
+You should be able to do this in O(n^2), as slower solutions will probably time out and fail the test... That is, the code needs to be efficient!
+</Note>
+
+The following code represents the behavior:
+
+```cpp
+Revolutions r = new Revolutions();
+Console.WriteLine(r.Calculate(new int[] { 4, 1, 3, 2, 5 })); // 3
+Console.WriteLine(r.Calculate(new int[] { 1, 2, 3, 4, 5 })); // 1
+Console.WriteLine(r.Calculate(new int[] { 5, 4, 3, 2, 1 })); // 5
+Console.WriteLine(r.Calculate(new int[] { 4, 3, 2, 1 })); // 4
+```
+
+</Exercise>
+
+
+<Exercise title={'005 Split'}>
+
+You are given an array with n integers. In how many ways can you split the array into left and right subarrays in such a way, that the sum of each part are equal?
+
+For example in array \[1,2,-1,4,0\] all the possible ways to split it are:
+
+\[1\] and \[2,-1,4,0\]  
+\[1,2\] and \[-1,4,0\]  
+\[1,2,-1\] and \[4,0\]   
+\[1,2,-1,4\] and \[0\]    
+In this array the correct answer is 1, as the sums of left and right side are equal only with \[1,2\] and \[-1,4,0\]. Now the sum of both sides is 3.
+
+You are given a class **Split** with the method **int Calculate(int[] t)**, which returns the amount of possible ways.
+
+<Note>
+You should be able to do this in O(n), as O(n^2) will probably time out and fail the test... That is, the code needs to be efficient!
+</Note>
+
+The following code represents the behavior:
+
+```cpp
+Split s = new Split();
+Console.WriteLine(s.Calculate(new int[] { 1, 2, -1, 4, 0 })); // 1
+Console.WriteLine(s.Calculate(new int[] { 1, 2, 3, 4, 5 })); // 0
+Console.WriteLine(s.Calculate(new int[] { 0, 0, 0, 0, 0 })); // 4
+Console.WriteLine(s.Calculate(new int[] { 1, 7, 4, 2, 2, 5, 6 })); // 0
+```
+
 
 
 
