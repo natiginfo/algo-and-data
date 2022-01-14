@@ -307,6 +307,9 @@ Usually when we want to find a solution to a mathematical problem, we want to fi
 
 # Exercises
 
+<Note>
+Even though in the material we use pseudocode to show functionality of certain algorithms, the exercises should be done with C#.
+</Note>
 
 <Exercise title={'001 Numbers'}>
 
