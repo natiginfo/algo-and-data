@@ -349,10 +349,6 @@ In practice, space complexity does not play a major role in algorithms, since if
 Even though in the material we use pseudocode to show functionality of certain algorithms, the exercises should be done with C#.
 </Note>
 
-<Note>
-Exercises will be published before the lecture!
-</Note>
-
 <Exercise title={'001 Basic Efficiency'}>
 
 You are given two classes, **Efficient** and **Inefficient**, both having a method **Counter**. In those methods, implement in C# the functionality of the following codes from the material.
@@ -361,7 +357,7 @@ You are given two classes, **Efficient** and **Inefficient**, both having a meth
 The code in the Program.cs is just for trying out the methods and show the difference in efficiency.
 </Note>
 
-* For the Inefficient, implement this in C#:
+* For the **Inefficient**, implement this in C#:
 
 ```console
 counter = 0
@@ -372,7 +368,7 @@ for i = 0 to n-1
 print(counter)
 ```
 
-* For the Efficient, implement this in C#:
+* For the **Efficient**, implement this in C#:
 
 ```console
 counter = 0
