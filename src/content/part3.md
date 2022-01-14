@@ -436,5 +436,9 @@ With binary search we could find out for example, if the array has two elements 
 # Exercises
 
 <Note>
+Even though in the material we use pseudocode to show functionality of certain algorithms, the exercises should be done with C#.
+</Note>
+
+<Note>
 Exercises will be published before the lecture!
 </Note>

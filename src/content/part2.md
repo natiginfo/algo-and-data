@@ -342,5 +342,9 @@ In practice, space complexity does not play a major role in algorithms, since if
 # Exercises
 
 <Note>
+Even though in the material we use pseudocode to show functionality of certain algorithms, the exercises should be done with C#.
+</Note>
+
+<Note>
 Exercises will be published before the lecture!
 </Note>

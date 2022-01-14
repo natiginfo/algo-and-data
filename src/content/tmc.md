@@ -27,6 +27,10 @@ You also need the `C#` plugin: [https://marketplace.visualstudio.com/items?itemN
 
 # How to do the exercises
 
+<Note>
+Even though in the material we use pseudocode to show functionality of certain algorithms, the exercises should be done with C#.
+</Note>
+
 ## Registering to the course
 
 Once you have everything installed, you need to download the exercises to your computer. To do that, you need to have a `MOOC.fi account`. You can read the instructions from here: [https://www.mooc.fi/en/installation/vscode/#mooc.fi-create-account](https://www.mooc.fi/en/installation/vscode/#mooc.fi-create-account). Follow the instructions to `login`.
