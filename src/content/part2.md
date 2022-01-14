@@ -365,7 +365,7 @@ for i = 0 to n-1
   for j = i + 1 to n-1
     if chars[i] == 0 and chars[j] == 1
       counter += 1
-print(counter)
+return counter
 ```
 
 * For the **Efficient**, implement this in C#:
@@ -378,7 +378,7 @@ for i = 0 to n-1
     zeros += 1
   else
     counter += zeros
-print(counter)
+return counter
 ```
 
 <Note>
