@@ -383,7 +383,14 @@ You might want to try recursion. You can do this without it as well, but this is
 
 <Exercise title={'004 Lucky numbers'}>
 
-<Note>This exercise is worth double points</Note>
+<Note>
+This exercise is worth double points, so 4 in total!
+</Note>
+
+<Note>
+The numbers might get quite big, and integers might not be enough. 
+You might have to converse them into longs in your code...
+</Note>
 
 An integer is a lucky number, if it is positive and every number in it is either 3 or 7. For example, 3, 7, 33, 37, 73, 77, and 733737 are lucky numbers. Your assigment is to calculate lucky numbers between a...b.
 
@@ -403,6 +410,6 @@ Console.WriteLine(luck.Calculate(120, 1000000000)); // 1016
 
 <Note>One way to do this, is to calculate from 1 to a and 1 to b separately, and substract them.</Note>
 
-<Note>Do not go through all the numbers, it is very inefficient. Try to find a mathematical pattern!</Note>
+<Note>Do not go through all the numbers, it is very inefficient and will time out. Try to find a mathematical pattern!</Note>
 
 </Exercise>
