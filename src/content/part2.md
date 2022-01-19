@@ -332,7 +332,7 @@ missing = sum
 ```
 
 <Note>
-Instead of variables and arrays, *recursion* can also take up space, since all the information of recursive subprogram calls are in a recursion stack in memory. For example, the following method has a space complexity of O(n), because there is at most *n* layers of recursive calls in the memory.
+Instead of variables and arrays, recursion can also take up space, since all the information of recursive subprogram calls are in a recursion stack in memory. For example, the following method has a space complexity of O(n), because there is at most n layers of recursive calls in the memory.
 </Note>
 
 ```console
