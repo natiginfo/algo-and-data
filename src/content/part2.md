@@ -446,6 +446,7 @@ You are given a class **Revolutions** with the method **int Calculate(int[] t)**
 
 <Note>
 You should be able to do this in O(n^2), as slower solutions will probably time out and fail the test... That is, the code needs to be efficient!
+It is possible to do in O(n) as well. Remember, if loops are not inside one another, they are each O(n), and the total is then O(n).
 </Note>
 
 The following code represents the behavior:
