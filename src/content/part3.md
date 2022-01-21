@@ -509,7 +509,7 @@ You are given an array with *n* integers. Your task is to create a [merge sort](
 
 I suggest you use the base from the material, linked above. 
 
-<NOTE>DO NOT USE built-in sorts!</Note>
+<Note>DO NOT USE built-in sorts!</Note>
 
 Use the class **Sorting** with the following methods:
 
