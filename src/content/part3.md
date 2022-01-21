@@ -409,7 +409,7 @@ Also here the sorting algorithm takes *O(n log n)*, and for-loop takes *O(n)*, s
 
 ## Binary search
 
-*Binary search* is a method for finding an element from a sorted array in time *O(log n)*. The idea is to keep in mind the search range where the value can be, and half the range with each step by looking at the element in the middle of the range. As the array is in order, we can always deduct, which way we should keep going with our search. The following code searches an element *x* from an array with binary search:
+*Binary search* is a method for finding an element from a **sorted array** in time *O(log n)*. The idea is to keep in mind the search range where the value can be, and half the range with each step by looking at the element in the middle of the range. As the array is in order, we can always deduct, which way we should keep going with our search. The following code searches an element *x* from an array with binary search:
 
 ```console
 a = 0
@@ -441,12 +441,9 @@ With binary search we could find out for example, if the array has two elements 
 Even though in the material we use pseudocode to show functionality of certain algorithms, the exercises should be done with C#.
 </Note>
 
-<Note>
-Not all of these exercises require recursion.
-</Note>
 
 <Note>
-You can use built-in sort in C#, unless stated otherwise.
+Not all of these exercises require recursion, and you can use built-in sort in C#, unless stated otherwise (exercise 3).
 </Note>
 
 <Exercise title={'001 Recursive Hello'}>
@@ -486,7 +483,7 @@ Hello!
 
 You are given an array with *n* integers. Your task is to solve, what is the smallest difference between two elements in the array.
 
-You are given a class SmallestDifference with the following method:
+You are given a class **SmallestDifference** with the following method:
 
 * **int Calculate(int[] t)**, which returns the smallest difference between two elements.
 
