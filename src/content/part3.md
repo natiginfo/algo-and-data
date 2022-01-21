@@ -352,6 +352,8 @@ The picture above shows how the algorithm works with an array **\[5, 1, 2, 9, 7,
 
 The efficiency of quick sort is dependant on how the elements are divided around the pivot. If we are lucky, there are approximately the same amount of elements on both sides of the pivot. This way the array is halved after every pivot, and quick sort is efficient. As the method **pivot** works in linear time, quick sort takes in this situation *O(n log n)*, just like merge sort.
 
+<Note>When implementing sorts with actual programming languages, we might have to give the array as a parameter as well, even though it does not show in pseudocode.</Note>
+
 There is a possibility, that the pivot point divides the array unevenly. The image below illustrates a situation, where all the elements are on the right side of the pivot. This time quick sort takes up *O(n^2*), since there are *O(n)* recursive levels. It clearly is *not* a good idea to choose the first element of an array as the pivot in all cases. For example, an array that is already in order, takes up *O(n^2)* time.
 
 ![Merge sort](https://github.com/centria/algo-and-data/raw/master/src/images/materials/badsplit.png)  
@@ -440,5 +442,132 @@ Even though in the material we use pseudocode to show functionality of certain a
 </Note>
 
 <Note>
-Exercises will be published before the lecture!
+Not all of these exercises require recursion.
 </Note>
+
+<Note>
+You can use built-in sort in C#, unless stated otherwise.
+</Note>
+
+<Exercise title={'001 Recursive Hello'}>
+
+Create a method **public static void Hello(int n)** which prints the string "Hello!" recursively, *n* amount of times.
+
+The functionality has been introduced earlier in the material as follows:
+
+```console
+void Hello(n)
+  if n == 0
+    return
+  else
+    print("Hello!")
+    Hello(n-1)
+```
+
+The following code represents the behavior:
+
+```cpp
+Hello(5);
+```
+
+```console
+Hello!
+Hello!
+Hello!
+Hello!
+Hello!
+```
+
+</Exercise>
+
+
+
+<Exercise title={'002 Smallest difference'}>
+
+You are given an array with *n* integers. Your task is to solve, what is the smallest difference between two elements in the array.
+
+You are given a class SmallestDifference with the following method:
+
+* **int Calculate(int[] t)**, which returns the smallest difference between two elements.
+
+The following code represents the behavior:
+
+```cpp
+SmallestDifference s = new SmallestDifference();
+Console.WriteLine(s.Calculate(new int[] {4,1,8,5})); // 1
+Console.WriteLine(s.Calculate(new int[] {1,10,100,1000})); // 9
+Console.WriteLine(s.Calculate(new int[] {1,1,1,1,1})); // 0
+```
+
+</Exercise>
+
+
+
+<Exercise title={'003 Sorting'}>
+
+You are given an array with *n* integers. Your task is to create a [merge sort](https://centria.github.io/algo-and-data/part3#merge-sort) and [quick sort](https://centria.github.io/algo-and-data/part3#quick-sort) for sorting the array.
+
+I suggest you use the base from the material, linked above. 
+
+<NOTE>DO NOT USE built-in sorts!</Note>
+
+Use the class **Sorting** with the following methods:
+
+* **public int[] MergeSort(int[] t)**
+* **public int[] QuickSort(int[] t, int a, int b)**
+
+You are also given a method **Randomizer** to create random arrays for testing, as well as some code in the Main.
+
+
+</Exercise>
+
+
+<Exercise title={'004 Binary search'}>
+
+You are given an array with n integers. Your task is to create a binary search, which finds if the array contains an integer x.
+
+You can review the algorithm structure from [here](https://centria.github.io/algo-and-data/part3#binary-search).
+
+Use the class **BinarySearch** with the following method:
+
+* **bool Find(int[] t, int x)**, which returns if the array **t** contains integer **x** or not.
+The following code represents the behavior:
+
+```cpp
+BinarySearch b = new BinarySearch();
+Console.WriteLine(b.Find(new int[] {4,1,8,5}, 2)); // false
+Console.WriteLine(b.Find(new int[] {0,0}, 0)); // true
+Console.WriteLine(b.Find(new int[] {4,1,8,5,8,7,4,2,3}, 2)); // true
+Console.WriteLine(b.Find(new int[] {0}, 0)); // true
+```
+
+</Exercise>
+
+<Exercise title={'005 Inversions'}>
+
+Your task is to create an array with **n** integers, which contains the numbers *1...n* and it has exactly *k* inversions. You can create any array, which fulfills these criteria.
+
+Use the class **Inversions**, with the following method:
+
+* **int[] Create(int n, int k)**, which returns the array.
+
+The following code represents the behavior:
+
+```cpp
+Inversions inv = new Inversions();
+int[] t = inv.Create(5, 2);
+Console.WriteLine(String.Join(" ", t));
+
+int[] t2 = inv.Create(10, 45);
+Console.WriteLine(String.Join(" ", t2));
+```
+These could produce something like this:
+
+```console
+1 2 5 3 4
+10 9 8 7 6 5 4 3 2 1
+```
+
+<Note>You can decide the locations of the inversions, just make sure the conditions apply!</Note>
+
+</Exercise>
