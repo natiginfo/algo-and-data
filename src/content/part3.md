@@ -538,6 +538,10 @@ Console.WriteLine(b.Find(new int[] {4,1,8,5,8,7,4,2,3}, 2)); // true
 Console.WriteLine(b.Find(new int[] {0}, 0)); // true
 ```
 
+<Note>
+Remember, binary search only works on sorted arrays, so you might have to sort them first...
+</Note>
+
 </Exercise>
 
 <Exercise title={'005 Inversions'}>
