@@ -204,11 +204,11 @@ With DFS we can find a path from node *a* to node *b*, if such a path exists. Th
 
 ### Connections and components
 
-An undirected graph is connected, if all the nodes are connected to each other. We can examine the connections of a graph by starting our search from any node and examining, if the search reaches all the nodes of the graph. In addition, we can find all the connected components of the graph by going through the nodes and beginning a new search, whenever we come across an unvisited node. Each search thus forms one component.
+An undirected graph is *connected*, if all the nodes are connected to each other. We can examine the connections of a graph by starting our search from any node and examining, if the search reaches all the nodes of the graph. In addition, we can find all the *connected components* of the graph by going through the nodes and beginning a new search, whenever we come across an unvisited node. Each search thus forms one component.
 
 ### Finding cycles
 
-If an undirected graph contains a cycle, we notice this with DFS, if we come to a visited node via another route (than the one we have used to get there earlier). Thus we can find a cycle from the graph, if such exists.
+If an undirected graph contains a *cycle*, we notice this with DFS, if we come to a visited node via another route (than the one we have used to get there earlier). Thus we can find a cycle from the graph, if such exists.
 
 ## BFS
 
@@ -219,7 +219,7 @@ Even though we could use BFS as a general tool for traversing a graph like DFS, 
 ![BFS](https://github.com/centria/algo-and-data/raw/master/src/images/materials/bfs.png)  
 source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
-Above you can see an example of BFS in action, when we start our search from node *1*. First we handle node *1*, from which we can access nodes *2* and *3*. This means, that the shortest paths to nodes *2* and *3* are 1 &#8594; 2 and 1 &#8594; 3, and the distance to these nodes is 1. Then we handle the node *2*, from which we can access new nodes, *4* and 5*. This lead to shortest paths to *4* and 5* being 1 &#8594; 2 &#8594; 4 and 1 &#8594; 2 &#8594; 5, and the distance to these nodes is 2. Finally, we handle nodes 3, 4 and 5 in this order, from which we cannot access any more nodes.
+Above you can see an example of BFS in action, when we start our search from node *1*. First we handle node *1*, from which we can access nodes *2* and *3*. This means, that the shortest paths to nodes *2* and *3* are 1 &#8594; 2 and 1 &#8594; 3, and the distance to these nodes is 1. Then we handle the node *2*, from which we can access new nodes, *4* and 5*. This leads to shortest paths to *4* and 5* being 1 &#8594; 2 &#8594; 4 and 1 &#8594; 2 &#8594; 5, and the distance to these nodes is 2. Finally, we handle nodes 3, 4 and 5 in this order, from which we cannot access any more nodes.
 
 
 One usual way to implement breadth-first search is to use a *queue* (In C#, [**Queue**](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.queue-1?view=netcore-3.1)). With a queue we can traverse the nodes in the order we have found them with BFS. We assumme, that the *queue* has a method *enqueue*, which adds an element to the end, and a method *dequeue*, which returns and removes the first element from the queue. The following code implements BFS beginning from the root-node *root*:

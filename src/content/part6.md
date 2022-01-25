@@ -115,7 +115,7 @@ So the Dijkstra algorithm works correctly, if there are no negative edges in the
 There is another way to do create the algorithm, and that is with a *priority queue* (also known as *heap*). Unfortunately, that has not been implemented in dotnet 5.0. 
 
 <Note>
-It is in dotnet 6.0 but not in time for this course.
+Priority queue or heap is in dotnet 6.0 but not in time for this course, as the course exercises still use dotnet 5.0.
 </Note> 
 
 Let's look at that as well:
@@ -164,6 +164,8 @@ Then, from *2* goes another connection to *3* every 5 minutes, with duration of 
 
 In reality, this could be enhanced in multiple ways. For example when we find any route to our end-point of the route, we could ignore the other locations, where we will reach later than to that end-point.
 
+<Note>In the example we take into consideration the average waiting time. So for example, if the buses leave every 10 minutes, the average waiting time is 5 minutes.</Note>
+
 # Floyd-Warshall algorithm
 
 Let's next look into a problem, where we want find the shortest paths *from all* nodes *into all* nodes. One way to solve this would be to run Bellman-Ford or Dijkstra's algorithm for each node of the graph. We can however solve this more directly by searching all the paths *simultaneosly* with the *Floyd-Warshall* algorithm.
@@ -204,12 +206,12 @@ We have now gone through multiple algorithms for finding shortest paths and we c
 |:---------------------|:----------------|:-------------------|
 | Breadth-first search | O(n+m)          | No weighted graphs |
 | Bellman-Ford         | O(nm)           |                    |
-| Dijkstra's           | O(n + m log n)  | No negative edges  |
+| Dijkstra's           | O(n + m log n) or O(m^2) | No negative edges  |
 | Floyd-Warshall       | O(n^3)          | Finds all paths    |
 
 In practice, BFS and Dijkstra's algorithms are most commonly used algorithms: if the edges do not have weights, use BFS, otherwise Dijkstra's algorithm. The limitation for Dijkstra's algorithm is that the graph cannot have negative edges, but this limitation usually does not matter in practical probles, as usually the weights of the edges cannot be negative. For example, obviously the length of a road cannot be negative, nor can the timetable of a bus. If a graph must have negative arches, then we can use the Bellman-Ford.
 
-How does Floyd-Warshall compare to other algorithms, then? This depends if the graph is *dense* or *sparse*. In a spare graph there are few edges and *m ~ n*, where as in a dense graph there are many edges and *m ~ n^2*. Floyd-Warshall is at its best with a dense graph, as its time complexity is not dependant on the amount of edges. For example, if we search all the shortest paths by running Dijkstra's algorithm *n* times, in a sparse graph it will take *O(n^2 log n)*, but in a dense graph it will be already *O(n^3 log n)*. In other words, with a sparse graph Dijkstra's is faster than Floyd-Warshall, but in a dense graph it is worse. On the other hand, the constants of Floyd-Warshall are very small due to its simple structure, and thus work surprisingly fast in practice.
+How does Floyd-Warshall compare to other algorithms, then? This depends if the graph is *dense* or *sparse*. In a sparse graph there are few edges and *m ~ n*, where as in a dense graph there are many edges and *m ~ n^2*. Floyd-Warshall is at its best with a dense graph, as its time complexity is not dependant on the amount of edges. For example, if we search all the shortest paths by running Dijkstra's algorithm *n* times, in a sparse graph it will take *O(n^2 log n)*, but in a dense graph it will be already *O(n^3 log n)*. In other words, with a sparse graph Dijkstra's is faster than Floyd-Warshall, but in a dense graph it is worse. On the other hand, the constants of Floyd-Warshall are very small due to its simple structure, and thus work surprisingly fast in practice.
 
 
 # Exercises

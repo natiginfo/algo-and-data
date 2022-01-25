@@ -17,7 +17,7 @@ In this part, we will be looking at two different lists, an *array list* and a *
 
 ## Array list
 
-*Array list* is a list, where the information is stored in an array. The [**List**](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.capacity?view=netcore-3.1#System_Collections_Generic_List_1_Capacity) of C# is a derivative of *ArrayList*. Since all the elements in an array list are stored after one another in the memory, we can access any information from the list in *O(1)*. The challenge is that the array is *of fixed capacity*, and if we want to change the capacity, we have to reserve a new array, and copy the content into that.
+*Array list* is a list, where the information is stored in an array. The [**List**](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.capacity?view=net-5.0#System_Collections_Generic_List_1_Capacity) of C# is a derivative of *ArrayList*. Since all the elements in an array list are stored after one another in the memory, we can access any information from the list in *O(1)*. The challenge is that the array is *of fixed capacity*, and if we want to change the capacity, we have to reserve a new array, and copy the content into that.
 
 ## Changes in the end
 
@@ -67,7 +67,7 @@ As we keep track of the amount of elements in our list, we can determine, which 
 ![Linked list 1](https://github.com/centria/algo-and-data/raw/master/src/images/materials/linkedlist1.png)  
 source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
-The image aboce shows the example list **\[3,7,2,5\]** as singly and doubly linked. In both cases we have the reference information for the *head* (the beginning) and the *tail (the end). In a singly linked list we can iterate the list from the beginning to the end, whereas in a doubly linked list, we can go both ways.
+The image aboce shows the example list **\[3,7,2,5\]** as singly and doubly linked. In both cases we have the reference information for the *head* (the beginning) and the *tail* (the end). In a singly linked list we can iterate the list from the beginning to the end, whereas in a doubly linked list, we can go both ways.
 
 The doubly linked list is a more reasonable way of doing a linked list, and from now on when we discuss linked lists, we always use *doubly linked list*. This is also how the class [**LinkedList**](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.linkedlist-1?view=netcore-3.1) is done in C#.
 
