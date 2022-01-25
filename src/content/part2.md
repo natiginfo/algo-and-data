@@ -414,7 +414,7 @@ Console.WriteLine(p.Calculate(new int[] { 1,1,1,1,1 })); // 5
 
 You are given a class, **Changes** and in it a method **Calculate**. The method is given an array with n integers as its parameter. You want to change the array, so that no number is repeated after one another. On each step, you can change any number from the array to be something else. What is the smallest amount of steps?
 
-For example, in array \[1,1,2,2,2\] the smallest amount of moves is 2. One solution would be to change the array to be \[1,3,2,1,2\]. Another coud be to change it to \[1,2,1,2,1\]. The solution is up to you.
+For example, in array \[1,1,2,2,2\] the smallest amount of moves is 2. One solution would be to change the array to be \[1,3,2,1,2\]. Another could be to change it to \[1,2,1,2,1\]. The solution is up to you.
 
 Use the method **int Calculate(int[] t)**, which returns the smallest amount of changes.
 
