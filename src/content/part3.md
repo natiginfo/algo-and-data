@@ -258,7 +258,7 @@ The efficiency of insertion sort is dependant on the content of the array we are
 
 A useful term in analysation of sorting algorithms is *inversion*: two elements in an array, which are in wrong order. For example in array **\[3, 1, 4, 2\]** is three inversions: **(3,1)**, **(3,2)** and **(4,2)**. The amount of inversions tells about the order of the array: The less there are inversions, the closer the array is to being in correct order. Most notably, *an array is in order when it has no inversions*.
 
-When a sorting algorithm sorts an array, it *removes* inversions. For example, each time the insertion sort swaps the two elements with each other, it is removing one insertion from the array. Thus the work load for insertion sort is equal to the amount of inversions in the array.
+When a sorting algorithm sorts an array, it *removes* inversions. For example, each time the insertion sort swaps the two elements with each other, it is removing one inversion from the array. Thus the work load for insertion sort is equal to the amount of inversions in the array.
 
 We have already established, that the worst input for insertion sort is a reverse ordered array. In an array like this each pair of elements create an inversion, so the amount of inversions is
 
@@ -268,7 +268,7 @@ How well does the insertion sort work *on average*? If we assume that an array h
 
 n(n-1) / 4 = O(n^2)  
 
-Which means we are still spending quadratic time. The reason why insertation sort is so *inefficient* is that it does not remove the inversions efficiently enough. If we want to create a better sorting algorithm, we have to design it in such a way, that it can remove multiple inversions *at the same time*. In practice, the algorithm should be able to move the element from the wrong position to the other side of the array *efficiently*.
+Which means we are still spending quadratic time. The reason why insertion sort is so *inefficient* is that it does not remove the inversions efficiently enough. If we want to create a better sorting algorithm, we have to design it in such a way, that it can remove multiple inversions *at the same time*. In practice, the algorithm should be able to move the element from the wrong position to the other side of the array *efficiently*.
 
 ## Sorting in O(n log n)
 
