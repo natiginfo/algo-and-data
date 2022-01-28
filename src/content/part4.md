@@ -252,9 +252,9 @@ The logic for adding a node is something like follows
 
 ```console
 void add(x)
-  if x < this node and this node has no left child
+  if x < this node and this node has no left child 
   {
-    left child is x
+    left child = x
   }
   else if x < this node
   {
@@ -262,7 +262,7 @@ void add(x)
   }
   else if  x > this node and this node has no right child
   {
-    right child is x
+    right child = x
   }
   else if x > this node
   {
