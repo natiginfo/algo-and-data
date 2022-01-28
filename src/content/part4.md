@@ -284,6 +284,152 @@ There are multiple ways to balance a binary search tree. They are, how ever, wel
 Even though in the material we use pseudocode to show functionality of certain algorithms, the exercises should be done with C#.
 </Note>
 
-<Note>
-Exercises will be published before the lecture!
-</Note>
+
+
+<Exercise title={'001 Doubly linked list'}>
+
+You are given the class **Node** from the material.
+
+Your task is to fullfill the class **LinkedList** for *a doubly linked list* with its most common functions.
+
+* **void AddFirst(int n)** Adds a Node to the beginning of the linked list, with value n.
+* **void AddLast(int n)** Adds a Node to the end of the linked list, with value n.
+* **void RemoveFirst()** Removes the first node from the linked list.
+* **void RemoveLast()** Removes the last node from the linked list.
+* **override string ToString()** returns the all the values of the list, from the beginning to the end, separated by a comma. Trim at the end, so no empty space at the end.
+
+<Note>The function int GetNode(int x) is already given, do not touch it.</Note>
+
+The program should work as follows:
+
+```cpp
+LinkedList myLinks = new LinkedList();
+myLinks.AddLast(1);
+myLinks.AddFirst(2);
+myLinks.AddLast(3);
+myLinks.AddLast(12);
+myLinks.AddFirst(6);
+Console.WriteLine(myLinks); // 6 2 1 3 12
+Console.WriteLine(myLinks.GetNode(4)); // 12
+myLinks.RemoveFirst();
+Console.WriteLine(myLinks); // 2 1 3 12
+myLinks.RemoveFirst();
+Console.WriteLine(myLinks); // 1 3 12
+myLinks.RemoveLast();
+Console.WriteLine(myLinks.GetNode(0)); // 1
+Console.WriteLine(myLinks.GetNode(1)); // 3
+Console.WriteLine(myLinks); // 1 3
+```
+
+
+</Exercise>
+
+
+
+<Exercise title={'002 Circle game'}>
+
+In a circle there are *n* children, all numbered *1, 2, 3,..., n*. Every turn every other child leaves the circle, until there is only one child left. What is the number of this child?
+For example, with *n = 7*, the children leave the circle in order 2, 4, 6, 1, 5, 3 and 7, so the last child to remain is number 7.
+
+Use the class **CircleGame** with the following method:
+* **int Last(int n)** returns the number of the last child from an n sized circle.
+
+For example:
+
+```cpp
+CircleGame g = new CircleGame();
+Console.WriteLine(g.Last(7)); // 7
+Console.WriteLine(g.Last(4)); // 1
+Console.WriteLine(g.Last(123)); // 119
+Console.WriteLine(g.Last(1235)); // 423
+Console.WriteLine(g.Last(1234)); // 421
+Console.WriteLine(g.Last(100000)); // 68929
+Console.WriteLine(g.Last(1000000)); // 951425
+```
+
+<Note>This should work with circles up to a million children (I know, that's a lot of people), so be efficient.</Note>
+
+</Exercise>
+
+
+<Exercise title={'003 Smallest distance'}>
+Your task is to fullfill the class **SmallestDistance**, which keeps a collection of numbers. You can add numbers to the collection and ask, what is the smallest distance between two numbers. The class has two methods:
+
+* **void Add(int x)**, add integer x to the collection
+* **int Calculate()**, returns the smallest distance between two integers.
+
+The following represents the functionality:
+
+```cpp
+SmallestDistance s = new SmallestDistance();
+s.Add(3);
+s.Add(8);
+Console.WriteLine(s.Calculate()); // 5
+s.Add(20);
+Console.WriteLine(s.Calculate()); // 5
+s.Add(9);
+Console.WriteLine(s.Calculate()); // 1
+s.Add(20);
+Console.WriteLine(s.Calculate()); // 0
+```
+
+</Exercise>
+
+
+
+<Exercise title={'004 Order'}>
+
+
+A binary tree has *n* nodes, numbered *1...n*. You are given the **pre-order a** and **in-order b**, and your task is to produce the **post-order** of said tree.
+
+You are given a class **Order**, which has the method:
+* **int[] Create(int[] a, int[] b)**, which returns the post-order of the nodes as an array.
+
+<Note>It is not necessarily a binary search tree, so the nodes can be in any order in the tree.</Note>
+
+For example
+
+```cpp
+Order o = new Order();
+int[] a1 = { 1, 2, 4, 3, 5, 6, 7, 8 }; // pre-order
+int[] b1 = { 4, 2, 1, 5, 3, 7, 6, 8 }; // in-order
+int[] c1 = o.Create(a1, b1);
+Console.WriteLine(String.Join(" ", c1)); // 4 2 5 7 8 6 3 1     
+
+int[] a2 = { 4, 2, 1, 3, 5 }; // pre-order
+int[] b2 = { 2, 4, 3, 1, 5 }; // in-order
+int[] c2 = o.Create(a2, b2);
+Console.WriteLine(String.Join(" ", c2)); // 2 3 5 1 4    
+```
+
+
+</Exercise>
+
+
+
+<Exercise title={'005 Binary Search Tree'}>
+
+You task is to fullfill the classes **BinarySearchTree** and **TreeNode**. 
+
+The BinarySearchTree requires the following:
+* **void Add(int x)**, adds the integer x to your tree.
+* **int Height()**, which returns the height of the tree.
+
+The TreeNode needs following fullfilled:
+* **AddChild**, adding a child to a tree requires logic. You can refresh your memory [from the material](https://centria.github.io/algo-and-data/part4#adding-a-node).
+
+For example:
+
+```cpp
+BinarySearchTree bs = new BinarySearchTree();
+bs.Add(5); // Becomes your root
+bs.Add(4); // Goes to the left
+bs.Add(6); // Goes to the right
+Console.WriteLine(bs.Height()); // 1
+bs.Add(3);
+bs.Add(1);
+bs.Add(7);
+Console.WriteLine(bs.Height()); // 3
+```
+
+</Exercise>
