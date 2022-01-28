@@ -248,6 +248,28 @@ source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw
 
 In the picture above we are adding *4* to the set of **{2,3,5,7,8,9}**. We first search for 4 in the tree and end up in node with object value of 3, and has no right child. Thus we create a new node for 4, and set is as the right child of 3.
 
+The logic for adding a node is something like follows
+
+```console
+void add(x)
+  if x < this node && this node has no left child
+  {
+    left child is x
+  }
+  else if x < this node
+  {
+    left child add(x)
+  }
+  else if  x > this node and this node has no right child
+  {
+    right child is x
+  }
+  else if x > this node
+  {
+    right child add(x)
+  }
+```
+
 ## Smallest / largest object
 
 When we want to find the smallest object, we start from the root and move to the left child on each step. When the node does not have a left child, we have found the smallest object. Similarly, if we want to find the greatest object, we start from the root, and always move to the right.
@@ -353,6 +375,7 @@ Console.WriteLine(g.Last(1000000)); // 951425
 
 
 <Exercise title={'003 Smallest distance'}>
+
 Your task is to fullfill the class **SmallestDistance**, which keeps a collection of numbers. You can add numbers to the collection and ask, what is the smallest distance between two numbers. The class has two methods:
 
 * **void Add(int x)**, add integer x to the collection
