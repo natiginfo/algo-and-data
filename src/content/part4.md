@@ -252,7 +252,7 @@ The logic for adding a node is something like follows
 
 ```console
 void add(x)
-  if x < this node && this node has no left child
+  if x < this node and this node has no left child
   {
     left child is x
   }
