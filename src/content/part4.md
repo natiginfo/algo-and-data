@@ -230,12 +230,11 @@ Next we shall look into the operations for handling nodes in a binary search tre
 
 ## Looking for nodes
 
-When we want to search the object *x* from our set, we start from the root of the tree and go downwards. When where are at the node *a*, there are three options. If *a = x*, we have found the object we were looking for. If *a > x*, we continue our search to the left child, an similarly if *a < x*, we continue to the right child. If the node does not have a child where we should move to, we can conlcude the 
+When we want to search the object *x* from our set, we start from the root of the tree and go downwards. When where are at the node *a*, there are three options. If *a = x*, we have found the object we were looking for. If *a > x*, we continue our search to the left child, an similarly if *a < x*, we continue to the right child. If the node does not have a child where we should move to, we can conlcude the set does not contain the object *x*.
 
 ![Binary search tree 2](https://github.com/centria/algo-and-data/raw/master/src/images/materials/bst2.png)  
 source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
-set does not contain the object *x*.
 
 The picture above shows, how we can find the object *7* from the set **{2,3,5,7,8,9}**. The root is at *5*, so the 7 has to be on the right subtree. This subtree has its root at 8, so now we know that 7 has to be to the left of 8, where it indeed can be found.
 
