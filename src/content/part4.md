@@ -317,7 +317,7 @@ Your task is to fullfill the class **LinkedList** for *a doubly linked list* wit
 * **void AddLast(int n)** Adds a Node to the end of the linked list, with value n.
 * **void RemoveFirst()** Removes the first node from the linked list.
 * **void RemoveLast()** Removes the last node from the linked list.
-* **override string ToString()** returns the all the values of the list, from the beginning to the end, separated by a comma. Trim at the end, so no empty space at the end.
+* **override string ToString()** returns the all the values of the list, from the beginning to the end, separated by a space. Trim at the end, so no empty space at the end.
 
 <Note>The function int GetNode(int x) is already given, do not touch it.</Note>
 
