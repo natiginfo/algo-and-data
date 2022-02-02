@@ -448,9 +448,9 @@ bs.Add(5); // Becomes your root
 bs.Add(4); // Goes to the left
 bs.Add(6); // Goes to the right
 Console.WriteLine(bs.Height()); // 1
-bs.Add(3);
-bs.Add(1);
-bs.Add(7);
+bs.Add(3); // Goes to the left
+bs.Add(1); // Goes to the left
+bs.Add(7); // Goes to the right
 Console.WriteLine(bs.Height()); // 3
 ```
 
