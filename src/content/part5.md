@@ -279,7 +279,7 @@ Even though in the material we use pseudocode to show functionality of certain a
 # Exercises
 
 
-<Note>In exercises 1,2 and 3, the computers can communicate with each other, if there is a connection between through other computers!</Note>
+<Note>In exercises 1,2 and 3, the computers can communicate with each other, if there is a connection between them through other computers!</Note>
 
 <Exercise title={'001 Connectivity'}>
 
