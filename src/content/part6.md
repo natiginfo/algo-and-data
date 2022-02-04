@@ -221,6 +221,109 @@ Even though in the material we use pseudocode to show functionality of certain a
 # Exercises
 
 
-<Note>
-Exercises will be published before the lecture!
-</Note>
+<Exercise title={'001 Bellman-Ford'}>
+
+In a Bitworld there are *n* cities, numbered *1,2,...,n*. There are two-way streets between those cities, with certain lengths. Your task is to find out the *shortest distance* between cities *x* and *y*, using **Bellman-Ford**.
+
+You are given the classes **Edge** and **BellmanFord**.
+
+Fill in the class **BellmanFord** with following methods:
+* constructor **BellmanFord(int n)**, the amount of cities is given to the constructor
+* **void AddRoad(int a, int b, int d)**: Adds a road between cities a and b, with the distance d
+* **int Calculate(int x, int y)** returns the shortest distance from city x to city y (or -1, if there is no connection).
+
+Example code:
+
+```cpp
+BellmanFord bf1 = new BellmanFord(5);
+bf1.AddRoad(1, 2, 7);
+bf1.AddRoad(2, 4, 2);
+bf1.AddRoad(1, 3, 6);
+bf1.AddRoad(3, 4, 5);
+bf1.AddRoad(4, 5, 3);
+Console.WriteLine(bf1.Calculate(1, 5)); // 12
+
+
+BellmanFord bf2 = new BellmanFord(7);
+bf2.AddRoad(1, 2, 7);
+bf2.AddRoad(2, 4, 2);
+bf2.AddRoad(1, 3, 6);
+bf2.AddRoad(3, 4, 5);
+bf2.AddRoad(4, 5, 3);
+bf2.AddRoad(6, 7, 3);
+Console.WriteLine(bf2.Calculate(1, 7)); // -1
+```
+
+</Exercise>
+
+<Exercise title={'002 Dijkstra'}>
+
+In a Bitworld there are *n* cities, numbered *1,2,...,n*. There are two-way streets between those cities, with certain lengths. Your task is to find out the *shortest distance* between cities *x* and *y*, using **Dijkstra's algorithm**.
+
+Fill in the class **Dijkstra** with following methods:
+* constructor **Dijkstra(int n)**, the amount of cities is given to the constructor
+* **void AddRoad(int a, int b, int d)**: Adds a road between cities a and b, with the distance d
+* **int Calculate(int x, int y)** returns the shortest distance from city x to city y (or -1, if there is no connection).
+
+Example code:
+
+```cpp
+Dijkstra d = new Dijkstra(6);
+d.AddRoad(1, 2, 7);
+d.AddRoad(2, 4, 2);
+d.AddRoad(1, 3, 6);
+d.AddRoad(3, 4, 5);
+d.AddRoad(4, 5, 3);
+Console.WriteLine(d.Calculate(1, 5)); // 12
+```
+
+</Exercise>
+
+<Exercise title={'003 Floyd-Warshall'}>
+
+In a Bitworld there are *n* cities, numbered *1,2,...,n*. There are two-way streets between those cities, with certain lengths. Your task is to find out the *shortest distance* between cities *x* and *y*, using **Floyd-Warshall**.
+
+Fill in the class **FloydWarshall** with following methods:
+* constructor **FloydWarshall(int n)**, the amount of cities is given to the constructor
+* **void AddRoad(int a, int b, int d)**: Adds a road between cities a and b, with the distance d
+* **int Calculate(int x, int y)** returns the shortest distance from city x to city y (or -1, if there is no connection).
+
+</Exercise>
+
+
+
+<Note>Next exercise is worth double points, 4 in total.</Note>
+
+
+
+<Exercise title={'004 Shortest paths'}>
+
+In a Bitworld there are *n* cities, numbered *1,2,...,n*. There are two-way streets between those cities, with certain lengths. Your task is to find out the *shortest route* between cities *x* and *y*. You can use any algorithm of your choosing.
+
+Fill in the class **ShortestPath** with following methods:
+* constructor **ShortestPath(int n)**, the amount of cities is given to the constructor
+* **void AddRoad(int a, int b, int d)**: Adds a road between cities a and b, with the distance d
+* **List<int> Create(int x, int y)** returns the shortest route from city x to city y as a list of cities.
+
+<Note>You can assume there is always a route between the x and y that are given to Create.</Note>
+
+Example code:
+
+```cpp
+ShortestPath s = new ShortestPath(5);
+s.AddRoad(1, 2, 7);
+s.AddRoad(2, 4, 2);
+s.AddRoad(1, 3, 6);
+s.AddRoad(3, 4, 5);
+s.AddRoad(4, 5, 3);
+s.Create(1, 5).ForEach(Console.Write); // 1245 
+Console.WriteLine();
+s.Create(1, 2).ForEach(Console.Write); // 12 
+Console.WriteLine();
+s.Create(1, 4).ForEach(Console.Write); // 124 
+Console.WriteLine();
+s.Create(4, 1).ForEach(Console.Write); // 421 
+Console.WriteLine();
+```
+
+</Exercise>
