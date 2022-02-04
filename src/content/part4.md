@@ -299,11 +299,12 @@ For a binary tree to work efficiently, we don't want the height to become too la
 
 There are multiple ways to balance a binary search tree. They are, how ever, well beyond the scope of this small course. It is crucial to know, however, that the selection of the root is, even though free, not recommended to be done at random, but with careful thought.
 
-# Exercises
-
 <Note>
 Even though in the material we use pseudocode to show functionality of certain algorithms, the exercises should be done with C#.
 </Note>
+
+
+# Exercises
 
 
 

@@ -272,13 +272,145 @@ search(y, x)
 We begin our search from a coordinate *y,x*. Our first check is to determine we keep inside our grid, and the second one to make sure we have not come to a wall or visited the node already. Then we search all the neighboring nodes recursively, in order up, down, right, left. This will find us *some path* from *A* to *B*, but not necessarily the shortest one.
 
 
-
-# Exercises
-
 <Note>
 Even though in the material we use pseudocode to show functionality of certain algorithms, the exercises should be done with C#.
 </Note>
 
+# Exercises
+
+
+<Note>In exercises 1,2 and 3, the computers can communicate with each other, if there is a connection between through other computers!</Note>
+
+<Exercise title={'001 Connectivity'}>
+
+A network comprises of *n* computers, which are labeled *1, 2, ..., n*. In the network there is a set of connections, through which information can be sent both ways. Your task is to find out, how with how many computers can a certain computer communicate.
+
+Fill the class **Connectivity** and its methods:
+* constructor **Connectivity(int n)**, the amount of computers is given in the constructor.
+* **void AddConnection(int a, int b)**, adds a connection between a and b.
+* **int Calculate(int x)**, returns the amount of computers with which x can communicate.
+
+Example of the functionality:
+
+```cpp
+Connectivity c = new Connectivity(10);
+c.AddConnection(1, 2);
+c.AddConnection(2, 3);
+c.AddConnection(1, 3);
+c.AddConnection(5, 4);
+c.AddConnection(5, 6);
+c.AddConnection(5, 7);
+c.AddConnection(7, 8);
+c.AddConnection(6, 9);
+c.AddConnection(9, 10);
+Console.WriteLine(c.Calculate(5)); // 6
+```
+
+</Exercise>
+
+<Exercise title={'002 Components'}>
+
+A network comprises of *n* computers, which are labeled *1, 2, ..., n*. In the network there is a set of connections, through which information can be sent both ways. Two computers belong in the *same component*, if they can communicate with each other. Your task is to calculate the amount of components.
+
+<Note>A computer with no connections to other computers can still communicate with itself, forming a component.</Note>
+
+Fill the class **Components** and its methods:
+* constructor **Components(int n)**, the amount of computers is given in the constructor.
+* **void AddConnection(int a, int b)**, adds a connection between a and b.
+* **int Calculate()**, returns the amount of components.
+
+
+Example code:
+
+```cpp
+Components k = new Components(6);
+// One connected component
+k.AddConnection(1, 2);
+k.AddConnection(2, 3);
+k.AddConnection(1, 3);
+k.AddConnection(3, 4);
+// Another connected component
+k.AddConnection(5, 6);
+Console.WriteLine(k.Calculate()); // 2
+
+Components c = new Components(4);
+// Every node is its own connected component
+Console.WriteLine(c.Calculate()); // 4
+```
+
 <Note>
-Exercises will be published before the lecture!
+You might want to create a helper method to find the connected components...
 </Note>
+
+</Exercise>
+
+<Exercise title={'003 Communication'}>
+
+A network comprises of *n* computers, which are labeled *1, 2, ..., n*. In the network there is a set of connections, through which information can be sent both ways. You are given pairs of computers and your task is to find out, if they can communicate with one another.
+
+Fill the class **Communication** and its methods:
+* contructor **Communication(int n)**, the amount of computers is given to the constructor as a parameter.
+* **void AddConnection(int a, int b)**, adds a connection between a and b.
+* **bool Examine(int x, int y)**, returns true if there is a connection between x and y, otherwise returns false.
+
+Example functionality:
+
+```cpp
+Communication comms = new Communication(6);
+comms.AddConnection(1, 2);
+comms.AddConnection(2, 3);
+comms.AddConnection(1, 3);
+comms.AddConnection(3, 4);
+comms.AddConnection(5, 6);
+Console.WriteLine(comms.Examine(1, 4)); // true
+Console.WriteLine(comms.Examine(2, 5)); // false
+Console.WriteLine(comms.Examine(5, 6)); // true
+```
+
+</Exercise>
+
+<Note>Next exercise is worth double points, 4 in total.</Note>
+
+<Exercise title={'004 Labyrinth'}>
+
+Your task is to find the *shortest path* from *x* to *y* in a labyrinth. The labyrinth is a matrix of *n \* m* size, and is constructed as follows: *#* means a wall, and *.* (dot) means a floor. You can assume that all the tiles on the outside are walls, and there is exactly one *x* and one *y* in the grid.
+
+On a single turn, you can move one step left, right, up or down. You have to give the route of the shortest path as a string, which is made from characters *L*, *R*, *U* and *D* respectively. If there are multiple routes, you can return any of them.
+
+Fill in the class **Labyrinth** with the following method:
+* **string Search(char[,] labyrinth)**, returns the description of the shortest path (if there is none, returns empty string).
+
+Example code:
+
+```cpp
+Labyrinth l = new Labyrinth();
+char[,] c =
+{ {'#','#','#','#','#','#','#'},
+  {'#','x','#','.','y','.','#'},
+  {'#','.','#','.','#','.','#'},
+  {'#','.','.','.','.','.','#'},
+  {'#','#','#','#','#','#','#'} };
+Console.WriteLine(l.Search(c)); // DDRRUUR       
+
+Labyrinth l2 = new Labyrinth();
+char[,] c2 =
+{ {'#','#','#','#','#','#'},
+  {'#','x','#','.','y','#'},
+  {'#','#','#','#','#','#'} };
+Console.WriteLine(l2.Search(c2)); // empty string 
+```
+
+<Note>
+For the shortest path, you have to make a breadth-first search (BFS).
+</Note>
+
+<Note>
+You can save the width n and the height m with the following code:
+
+```cpp
+int n = laby.GetLength(0);
+int m = laby.GetLength(1);
+```
+</Note>
+
+</Exercise>

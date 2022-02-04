@@ -435,11 +435,11 @@ The picture above shows the functionality, when we are looking for the value of 
 With binary search we could find out for example, if the array has two elements *a* and *b* so, that *a + b = x*, where x is the given input. The idea is to sort the array first and then go through all the elements of the array. With each element we examine, could it be *a*. In this case, there would have to be another element *b* in such a way, that *a + b = x*, or the array should contain an element *x - a*. We can find this with binary search in *O(log n)*. As a result, we have an algorithm, which takes up time *O(n log n)*, because both sorting and going through the array with binary search take up *O(n log n)*.
 
 
-# Exercises
-
 <Note>
 Even though in the material we use pseudocode to show functionality of certain algorithms, the exercises should be done with C#.
 </Note>
+
+# Exercises
 
 
 <Note>

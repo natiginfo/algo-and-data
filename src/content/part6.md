@@ -213,12 +213,13 @@ In practice, BFS and Dijkstra's algorithms are most commonly used algorithms: if
 
 How does Floyd-Warshall compare to other algorithms, then? This depends if the graph is *dense* or *sparse*. In a sparse graph there are few edges and *m ~ n*, where as in a dense graph there are many edges and *m ~ n^2*. Floyd-Warshall is at its best with a dense graph, as its time complexity is not dependant on the amount of edges. For example, if we search all the shortest paths by running Dijkstra's algorithm *n* times, in a sparse graph it will take *O(n^2 log n)*, but in a dense graph it will be already *O(n^3 log n)*. In other words, with a sparse graph Dijkstra's is faster than Floyd-Warshall, but in a dense graph it is worse. On the other hand, the constants of Floyd-Warshall are very small due to its simple structure, and thus work surprisingly fast in practice.
 
-
-# Exercises
-
 <Note>
 Even though in the material we use pseudocode to show functionality of certain algorithms, the exercises should be done with C#.
 </Note>
+
+
+# Exercises
+
 
 <Note>
 Exercises will be published before the lecture!
