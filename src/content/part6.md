@@ -303,7 +303,7 @@ In a Bitworld there are *n* cities, numbered *1,2,...,n*. There are two-way stre
 Fill in the class **ShortestPath** with following methods:
 * constructor **ShortestPath(int n)**, the amount of cities is given to the constructor
 * **void AddRoad(int a, int b, int d)**: Adds a road between cities a and b, with the distance d
-* **List<int> Create(int x, int y)** returns the shortest route from city x to city y as a list of cities.
+* **List<int\> Create(int x, int y)** returns the shortest route from city x to city y as a list of cities.
 
 <Note>You can assume there is always a route between the x and y that are given to Create.</Note>
 
