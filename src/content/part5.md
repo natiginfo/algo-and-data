@@ -240,7 +240,7 @@ while queue is not empty
 
 First we add the root-node to the queue and mark we have visited it, and the distance to the root is 0. after this we begin to handle the nodes in the order as they are in the queue. We will handle a node by going through its neighbors. If we have not visited a neighbor before, we add it to the queue and update the arrays. The search takes *O(n+m)* time, as we handle each node and edge at maximum once.
 
-## Example: Labyrinth
+## Example of a graph: Labyrinth
 
 We are in a labyrinth and we want to get from square *A* to square *B*. With each turn, we can move one step up, down, left or right. Can we get from *A* to *B*, and if we can, what is the shortest possible route? 
 
@@ -253,7 +253,7 @@ source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw
 Using this illustration, there is a path from *A* to *B* exactly when the nodes of the corresponding graph are a part of the same component. We can check with DFS, if there is a path from *A* to *B*. The shortest path from *A* to *B* can be found with *BFS*, which starts from *A*.
 
 <Note>
-We do not have to separately change the labyrinth into a graph, but we can do the search on implicit graph. This means, that we do the search to the labyrinth in its own presentation form. In practice, the labyrinth is handly to save as a two-dimensional array, which tells which squares are walls. Then we can do for example a DFS like follows:
+We do not have to separately change the labyrinth into a graph, but we can do the search on implicit graph. This means, that we do the search to the labyrinth in its own presentation form. In practice, the labyrinth is handy to save as a two-dimensional array, which tells which squares are walls. Then we can do for example a DFS like follows:
 </Note>
 
 ```console
@@ -401,7 +401,8 @@ Console.WriteLine(l2.Search(c2)); // empty string
 ```
 
 <Note>
-For the shortest path, you have to make a breadth-first search (BFS).
+For the shortest path, you have to make a breadth-first search (BFS)! 
+The DFS from the example might not find the shortest route, as it finds any route...
 </Note>
 
 <Note>
