@@ -1,5 +1,5 @@
 ---
-title: 'Introduction'
+title: 'Basic algorithms'
 nav_order: 2
 hidden: false
 ---

@@ -1,5 +1,5 @@
 ---
-title: 'Learning goals'
+title: 'Course information'
 nav_order: 1
 hidden: false
 ---
