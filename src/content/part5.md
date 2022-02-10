@@ -5,7 +5,7 @@ hidden: false
 ---
 
 
-We can solve many algorithmic problems by representing the problem as a *graph* and use a suitable graph algorithm. A typical example of a graph is a network of roads, which comprises of cities and the roads between them. In such a graph, the problem could be for example finding the route from city *a* to city *a*.
+We can solve many algorithmic problems by representing the problem as a *graph* and use a suitable graph algorithm. A typical example of a graph is a network of roads, which comprises of cities and the roads between them. In such a graph, the problem could be for example finding the route from city *a* to city *b*.
 
 ## Graph terms
 
