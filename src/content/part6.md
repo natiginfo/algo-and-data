@@ -288,6 +288,18 @@ Fill in the class **FloydWarshall** with following methods:
 * **void AddRoad(int a, int b, int d)**: Adds a road between cities a and b, with the distance d
 * **int Calculate(int x, int y)** returns the shortest distance from city x to city y (or -1, if there is no connection).
 
+Example code:
+
+```cpp
+FloydWarshall fw = new FloydWarshall(5);
+fw.AddRoad(1, 2, 7);
+fw.AddRoad(2, 4, 2);
+fw.AddRoad(1, 3, 6);
+fw.AddRoad(3, 4, 5);
+fw.AddRoad(4, 5, 3);
+Console.WriteLine(fw.Calculate(1, 5)); // 12
+```
+
 </Exercise>
 
 
