@@ -64,7 +64,7 @@ One common way to represent a graph is to create an *adjacency list* for each no
 ![Graph 8](https://github.com/centria/algo-and-data/raw/master/src/images/materials/graph8.png)  
 source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
-If we want to create an adjacency list in C# we can create a List
+If we want to create an adjacency list in C# we can create an array of Lists
 
 ```cpp
 List<int>[] graph = new List<int>[n + 1];
