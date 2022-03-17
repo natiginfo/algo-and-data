@@ -16,7 +16,7 @@ You need to have `.NET` (also called `Dotnet`) installed. You can install it fro
 
 ## Visual Studio Code
 
-The editor used during this course is `Visual Studio Code`. You can fid the instruvtions from example here: [https://www.mooc.fi/en/installation/vscode/#installing-vscode](https://www.mooc.fi/en/installation/vscode/#installing-vscode) or the direct installation link from here: [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+The editor used during this course is `Visual Studio Code`. You can find the instructions from example here: [https://www.mooc.fi/en/installation/vscode/#installing-vscode](https://www.mooc.fi/en/installation/vscode/#installing-vscode) or the direct installation link from here: [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
 
 ## C# and TMC Plugin
 
@@ -39,7 +39,7 @@ Once you have everything installed, you need to download the exercises to your c
 
 When you have the account, follow the instructions for:
 - Selecting your organization: *Centria University of Applied Sciences*
-- Selecting your course: *Algorithms and Data Structures with C#*
+- Selecting your course: *Algorithms and Data Structures with C# Open University*
 
 ## Doing the exercises
 
@@ -60,7 +60,7 @@ In Visual Studio Code, select `Terminal` and then `New Terminal`
 
 ![Terminal menu](https://github.com/centria/algo-and-data/raw/master/src/images/new-terminal.png)
 
-A selection of options will pop up. The selections contain all the open exercises. In the example, I am doing part 6, so I have those open.
+A selection of options will pop up. The selections contain all the open exercises. In the example, I am doing part 6 of another course, so I have those open.
 
 ![Folder selection](https://github.com/centria/algo-and-data/raw/master/src/images/select-folder.png)
 
@@ -77,7 +77,7 @@ A selection of options will pop up. The selections contain all the open exercise
 
 ![Dotnet run](https://github.com/centria/algo-and-data/raw/master/src/images/dotnet-run.png)
 
-* If your program works as it should, you can see the output in the console. The next example is from Part 6, exercise 003:
+* If your program works as it should, you can see the output in the console. The next example is from Part 6, exercise 003 of the example course:
 
 ![Dotnet run](https://github.com/centria/algo-and-data/raw/master/src/images/dotnet-print.png)
 
