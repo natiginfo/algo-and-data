@@ -8,7 +8,7 @@ The course is divided into six parts, all of which contain exercises. To pass th
 
 ## Deadlines
 
-The course has only one final deadline on 31.7.2022 at 23.59, by which exercises have to be done. The deadline is automatic and hard.
+The course has only one final deadline on 15.8.2022 at 23.59, by which exercises have to be done. The deadline is automatic and hard.
 
 ## Advancing on the course
 
@@ -22,4 +22,4 @@ Exercise submission instructions <Link style={{color: "#ef5b5b"}} to='/tmc'>can 
 
 The exam will be held in Centria's Itslearning platform.
 
-The deadline for the exam will be 31.7.2022 at 23.59.
+The deadline for the exam will be 15.8.2022 at 23.59.
