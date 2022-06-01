@@ -20,6 +20,6 @@ Exercise submission instructions <Link style={{color: "#ef5b5b"}} to='/tmc'>can 
 
 ## The exam
 
-The exam will be held in Centria's Itslearning platform.
+The exam will be held in Centria's Itslearning platform. To access the exam, you have to register to the Open University course from this page: [https://koulutus.centria.fi/koulutukset/software-development/](https://koulutus.centria.fi/koulutukset/software-development/).
 
-The deadline for the exam will be 31.7.2022 at 23.59.
+Those who want to get ECTS credits, must enroll in open university by 31.7.2022. The registrees will get the credentials in Centria’s Itslearning-environment on 5.8. The final exam in Itslearning must be finished by 14.8. The student’s performance will be evaluated by the teacher on 14.9. at latest.
