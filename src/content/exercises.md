@@ -8,7 +8,7 @@ The course is divided into six parts, all of which contain exercises. To pass th
 
 ## Deadlines
 
-The course has only one final deadline on 14.8.2022 at 23.59, by which exercises have to be done. The deadline is automatic and hard.
+The course can have either weekly deadlines or a single deadline at the end, by which exercises have to be done. The deadlines are automatic and hard. You can find the deadlines from TMC and/or Itslearning.
 
 ## Advancing on the course
 
@@ -22,4 +22,4 @@ Exercise submission instructions <Link style={{color: "#ef5b5b"}} to='/tmc'>can 
 
 The exam will be held in Centria's Itslearning platform. To access the exam, you have to register to the Open University course from this page: [https://koulutus.centria.fi/koulutukset/software-development/](https://koulutus.centria.fi/koulutukset/software-development/).
 
-Those who want to get ECTS credits, must enroll in open university by 31.7.2022. The registrees will get the credentials in Centria’s Itslearning-environment on 5.8. The final exam in Itslearning must be finished by 14.8. The student’s performance will be evaluated by the teacher on 14.9. at latest.
+Those who want to get ECTS credits, must enroll in open university. The registrees will get the credentials in Centria’s Itslearning-environment. The final exam in Itslearning must be finished by deadline (set per course basis).
