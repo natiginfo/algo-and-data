@@ -6,20 +6,16 @@ hidden: false
 
 Welcome to the Algorithms and Data Structures course!
 
-<Note>
-This course has a living material, which means it will be published on weekly basis. This includes both the materials and the exercises.
-
-Some of the later parts might contain information about previous iterations of the course, such as references to exercises, which may or may not be in this iteration.
-</Note>
-
 ## If you just want to learn
 
 To attend the course, you do not have to be a student in Centria University of Applied science. All the material and exercises are available online. If you want to get ECTS credits for the course, you have to register to Centria Open University.
 
 
-## Registering to Open University course
+## Registering to Open University
 
 You can register to the course from [HERE](https://koulutus.centria.fi/koulutukset/software-development/).
+
+<Note>Centria students don't have to enroll to Open University, but enroll from Peppi!</Note>
 
 
 # Learning goals
@@ -49,7 +45,7 @@ The list below does not include everything, but exists to give a guideline for s
 | 48-53 |   4   |
 | 54-60 |   5   |
 
-At the end of the courses, there is also an exam with **pass / fail** grading. This does not affect the grade but is to ensure that you have done the exercises yourself. More information about the exam will come closer to the exam.
+At the end of the course, there is also an exam with **pass / fail** grading. This does not affect the grade but is to ensure that you have done the exercises yourself. The exam is reserved for students of Centria University of Applied Sciences and Centria Open University, and you can find the registeration information from above. The course material and the exercises are available still for anyone who wants.
 
 
 ## Errors in the material?

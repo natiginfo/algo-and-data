@@ -12,7 +12,7 @@ To do the exercises for this course, you need to install a few software to your 
 ## .NET
 You need to have `.NET` (also called `Dotnet`) installed. You can install it from here: [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download). 
 
-<Note>Dotnet 5.0 has met its End of Life. Course with dotnet 6.0 support coming 1.9.2022!</Note>
+<Note>Dotnet 5.0 has met its End of Life. Course with dotnet 6.0 online now!</Note>
 
 ## Visual Studio Code
 
@@ -27,15 +27,22 @@ You also need the `C#` plugin: [https://marketplace.visualstudio.com/items?itemN
 
 # How to do the exercises
 
-<Note>
-Even though in the material we use pseudocode to show functionality of certain algorithms, the exercises should be done with C#.
-</Note>
-
 ## Registering to the course
 
 Once you have everything installed, you need to download the exercises to your computer. To do that, you need to have a `MOOC.fi account`. You can read the instructions from here: [https://www.mooc.fi/en/installation/vscode/#mooc.fi-create-account](https://www.mooc.fi/en/installation/vscode/#mooc.fi-create-account). Follow the instructions to `login`.
 
-<Note>Register with your university (or school) email, if you have one!</Note>
+<Note>
+Register with your university (or school) email, if you have one!
+Also, register with same email to TMC and to Open University, if you want credits!
+</Note>
+
+### Centria students
+
+When you have the account, follow the instructions for:
+- Selecting your organization: *Centria University of Applied Sciences*
+- Selecting your course according to time of attendance, for example *Basics of Programming in C# Fall 1*
+    - The correct course name can also be found from Itslearning.
+
 
 When you have the account, follow the instructions for:
 - Selecting your organization: *Centria University of Applied Sciences*
@@ -49,12 +56,21 @@ You can follow these instructions (to a point) on how to submit exercises:
 [https://www.mooc.fi/en/installation/vscode/#first-programming-exercise](https://www.mooc.fi/en/installation/vscode/#first-programming-exercise)
 
 <Note>
+At this point, you might encounter a bug, and the exercises do not show up.
+
+In this case, you have to choose again the Extensions menu, select the TMC extension, and enable it.
+
+After enabling, VSCode will ask if you trust the extension and the files, say YES to both questions.
+</Note>
+
+
+## Running the exercises
+
+<Note>
 The part of "Running the source code" does not unfortunately work yet.
 
 We have to run our exercises manually, if we want to do so.
 </Note>
-
-## Running the exercises
 
 In Visual Studio Code, select `Terminal` and then `New Terminal`
 
